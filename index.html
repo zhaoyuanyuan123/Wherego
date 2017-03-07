@@ -4,10 +4,96 @@
 		<meta charset="UTF-8">
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script type="text/javascript" src="js/go.js" ></script>
+		
+		<script src="js/move1.js"></script>
 	</head>
 	<body>
 		<div id="header">
-			<img src="img/logo.png" id="logo" />
+			<ul>
+				<li><a href="###">首页<p>HOME</p></a></li>
+				<li><a href="###">蛋糕馆<p>CAKES</p></a></li>
+				<li><a href="###">礼品馆<p>GIFTS</p></a></li>
+				<li style="width:328px;height:88px;line-height:120px;"><img src="img/TNtoplistlogo.jpg" /></li>
+				<li><a href="###">我的诺心<p>MY LECAKE</p></a></li>
+				<li><a href="###">企业专区<p>CORPORATE</p</a>></li>
+				<li><a href="###">关于诺信<p>ABOUT US</p></a></li>
+			</ul>			
+		</div>
+		<div id="enter">
+			<div class="dashed"><a href="###"><p class="city">西安市|V</p></a><p class="seaver">全国客服热线  187-9252-2353 服务时间：10:30-17:30</p>
+			<p class="shoppingcay"> 登录 | 注册  | 购物车2件 | 帮助</p></div>
+			<p class="useradvice"><marquee >重要公告：为方便广大用户选购蛋糕，根据用户反馈意见3月16日起甜心蛋糕将全面升级！"1磅" 改为：1-4人份，"2磅" 改为：4-8人份，"3磅" 改为：8-12人份！！！欢迎大家前来订购</marquee></p>			
+		</div>
+		<div id="wrap"></div>
+		<div id="timecard">
+			<div class="time1">
+				<img src="img/14.jpg" />
+				<img src="img/16.jpg" />
+			</div>
+			<div class="time2">
+				<img src="img/11.jpg" />
+				<img src="img/10.jpg" />
+			</div>
+			<div class="time3">
+				<img src="img/12.jpg" />
+				<img src="img/2.jpg" />
+			</div>
+			<img src="img/4.jpg" id="leftImg"  />
+			<img src="img/2.jpg" id="centerImg"  />
+			<img src="img/16.jpg" id="rightImg"  />
 		</div>
 	</body>
 </html>
+<script>
+window.onload = function(){
+		//1、创建轮播图（包括页面）
+		var oWrap = new AutoPlayerImgs(
+			"wrap",
+			1505,
+			544,
+			["img/1.jpg","img/13.jpg","img/18.jpg","img/20.jpg","img/21.jpg","img/3.jpg"],
+			["http://www.baidu.com","http://www.taobao.com","http://www.jd.cn","http://www.sohu.com","http://www.mobiletrain.org"],
+			2500,
+			{width:200,height:20,bgColor:"rgba(0,0,0,0.4)",highLightColor:"#fcc"}
+		);
+		oWrap.go();	
+	}
+
+</script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+<script>
+	$(function(){
+		$(".time1>img:eq(0)").mouseover(function(){
+			$("#leftImg").animate({
+				"left":"0px"
+			},1000);
+		})
+		$("#leftImg").mouseout(function(){
+			$("#leftImg").animate({
+				"left":"-1000px"
+			},500);
+		})				
+		$(".time2>img:eq(1)").mouseover(function(){
+			$("#centerImg").animate({
+				"top":"0px"
+			},1000);
+		})
+		$("#centerImg").mouseout(function(){
+			$("#centerImg").animate({
+				"top":"-560px"
+			},500);
+		})
+		
+		$(".time3>img:eq(0)").mouseover(function(){
+			$("#rightImg").animate({
+				"right":"20px"
+			},1000);
+		})
+		$("#rightImg").mouseout(function(){
+			$("#rightImg").animate({
+				"right":"-1060px"
+			},500);
+		})
+	})		
+</script>

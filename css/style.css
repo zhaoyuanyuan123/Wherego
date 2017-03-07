@@ -1,11 +1,124 @@
+ul li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+
 * {
   margin: 0;
   padding: 0; }
 
 #header {
   width: 100%;
-  font-size: 18px;
-  height: 74px;
-  border: 1px solid #fcc; }
+  font-size: 25px;
+  height: 100px;
+  border: 1px solid #fcc;
+  background: #c8bb9b;
+  color: #fff; }
+  #header ul {
+    heigth: 80px;
+    margin-top: 10px; }
+    #header ul li {
+      float: left;
+      width: 197px;
+      text-align: center;
+      line-height: 40px; }
+      #header ul li p {
+        font-size: 14px; }
+      #header ul li img {
+        width: 308px;
+        height: 80px; }
+
+#enter {
+  width: 98.4%;
+  font-size: 16px;
+  height: 100px;
+  border: 1px solid #fcc;
+  background: #fefaec;
+  color: #fff;
+  padding-left: 25px; }
+  #enter .dashed {
+    border-bottom: 1px dashed #b2aca3;
+    height: 42px; }
+  #enter .city {
+    width: 100px;
+    height: 35px;
+    color: #fff;
+    background: #cfa972;
+    border-radius: 7px;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 20px;
+    margin-top: 3px;
+    display: inline-block; }
+  #enter .seaver {
+    width: 600px;
+    height: 40px;
+    color: red;
+    font-size: 23px;
+    display: inline-block;
+    margin-left: 30px; }
+  #enter .shoppingcay {
+    width: 330px;
+    height: 40px;
+    color: red;
+    font-size: 23px;
+    display: inline-block;
+    margin-left: 350px; }
+  #enter .useradvice {
+    color: red;
+    font-size: 23px;
+    height: 48px;
+    line-height: 48px; }
+
+#wrap {
+  height: 344px;
+  width: 1505px;
+  position: relative;
+  left: 0;
+  top: 0px;
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  border: 1px solid #fcc;
+  overflow: hidden; }
+
+#timecard {
+  width: 100%;
+  height: 540px;
+  border: 1px solid #fcc;
+  position: relative;
+  background: #f8e8e8;
+  overflow: hidden; }
+  #timecard .time1, #timecard .time2, #timecard .time3 {
+    width: 31%;
+    height: 500px;
+    float: left;
+    padding: 16px; }
+    #timecard .time1 img, #timecard .time2 img, #timecard .time3 img {
+      width: 100%;
+      height: 250px; }
+  #timecard #leftImg {
+    margin-left: 16px;
+    width: 969px;
+    height: 540px;
+    position: absolute;
+    top: 16px;
+    left: -1000px; }
+  #timecard #centerImg {
+    margin-left: 16px;
+    width: 488px;
+    height: 520px;
+    position: absolute;
+    top: -560px;
+    left: 488px; }
+  #timecard #rightImg {
+    margin-left: 16px;
+    width: 980px;
+    height: 540px;
+    position: absolute;
+    top: 16px;
+    right: -1000px; }
 
 /*# sourceMappingURL=style.css.map */
