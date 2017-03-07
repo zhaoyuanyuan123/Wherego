@@ -1,0 +1,15 @@
+@charset "utf-8";
+$fontsize:18px;
+$bodywidth:100%;
+$border:1px solid #fcc;
+*{
+    margin:0;
+    padding:0;
+}
+#header{
+    width:$bodywidth;
+    font-size:$fontsize;
+    height:74px;
+    border:$border;
+}
+
