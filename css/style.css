@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0; }
+
 ul li {
   list-style: none; }
 
@@ -5,36 +9,72 @@ a {
   text-decoration: none;
   color: #fff; }
 
-* {
-  margin: 0;
-  padding: 0; }
+i, em, #prolist .shopping i, #prolist .shopping1 i, #prolist .shopping2 i {
+  font-style: normal; }
+
+#seleteCity {
+  width: 100%;
+  font-size: 16px;
+  height: 70px;
+  background: #fefaec;
+  color: #000;
+  position: absolute;
+  z-index: 3;
+  border-bottom: #928451;
+  display: none; }
+  #seleteCity p {
+    display: inline-block;
+    float: left;
+    width: 100px;
+    height: 50px;
+    line-height: 60px;
+    margin-right: 30px;
+    margin-left: 10px; }
+  #seleteCity .selCity li {
+    float: left;
+    color: #aaa;
+    font-size: 14px;
+    width: 50px;
+    text-decoration: underline; }
 
 #header {
   width: 100%;
-  font-size: 25px;
-  height: 100px;
-  border: 1px solid #fcc;
+  font-size: 20px;
+  height: 80px;
   background: #c8bb9b;
   color: #fff; }
   #header ul {
-    heigth: 80px;
-    margin-top: 10px; }
+    heigth: 70px; }
     #header ul li {
       float: left;
-      width: 197px;
+      width: 113px;
       text-align: center;
-      line-height: 40px; }
+      line-height: 30px;
+      margin-top: 15px; }
       #header ul li p {
         font-size: 14px; }
       #header ul li img {
         width: 308px;
-        height: 80px; }
+        height: 65px; }
+      #header ul li .menu1, #header ul li .menu2, #header ul li .menu3, #header ul li .menu4 {
+        width: 120px;
+        position: absolute;
+        z-index: 10;
+        margin-top: 0px;
+        font-size: 16px;
+        color: #fff;
+        display: none; }
+      #header ul li ul li {
+        color: #000;
+        border-bottom: 1px dashed #fff;
+        background: rgba(10, 10, 10, 0.3);
+        margin-top: 0px;
+        color: #fff; }
 
 #enter {
   width: 98.4%;
-  font-size: 16px;
-  height: 100px;
-  border: 1px solid #fcc;
+  font-size: 14px;
+  height: 80px;
   background: #fefaec;
   color: #fff;
   padding-left: 25px; }
@@ -42,52 +82,49 @@ a {
     border-bottom: 1px dashed #b2aca3;
     height: 42px; }
   #enter .city {
-    width: 100px;
-    height: 35px;
+    width: 80px;
+    height: 28px;
     color: #fff;
     background: #cfa972;
     border-radius: 7px;
     text-align: center;
-    line-height: 35px;
+    line-height: 28px;
     margin-left: 20px;
     margin-top: 3px;
     display: inline-block; }
   #enter .seaver {
-    width: 600px;
+    width: 40%;
     height: 40px;
     color: red;
-    font-size: 23px;
+    font-size: 16px;
     display: inline-block;
     margin-left: 30px; }
   #enter .shoppingcay {
-    width: 330px;
+    width: 25%;
     height: 40px;
     color: red;
-    font-size: 23px;
+    font-size: 16px;
     display: inline-block;
-    margin-left: 350px; }
+    margin-left: 20%; }
   #enter .useradvice {
     color: red;
-    font-size: 23px;
+    font-size: 16px;
     height: 48px;
     line-height: 48px; }
 
 #wrap {
   height: 344px;
-  width: 1505px;
+  width: 100%;
   position: relative;
   left: 0;
   top: 0px;
   width: 100%;
-  height: 500px;
   margin: 0 auto;
-  border: 1px solid #fcc;
   overflow: hidden; }
 
 #timecard {
   width: 100%;
-  height: 540px;
-  border: 1px solid #fcc;
+  height: 420px;
   position: relative;
   background: #f8e8e8;
   overflow: hidden; }
@@ -95,30 +132,218 @@ a {
     width: 31%;
     height: 500px;
     float: left;
-    padding: 16px; }
+    padding: 10px; }
     #timecard .time1 img, #timecard .time2 img, #timecard .time3 img {
       width: 100%;
-      height: 250px; }
+      height: 200px; }
   #timecard #leftImg {
     margin-left: 16px;
-    width: 969px;
-    height: 540px;
+    width: 65%;
+    height: 420px;
     position: absolute;
-    top: 16px;
+    top: 10px;
     left: -1000px; }
   #timecard #centerImg {
     margin-left: 16px;
-    width: 488px;
-    height: 520px;
+    width: 32%;
+    height: 420px;
     position: absolute;
     top: -560px;
-    left: 488px; }
+    left: 32%; }
   #timecard #rightImg {
     margin-left: 16px;
-    width: 980px;
-    height: 540px;
+    width: 66%;
+    height: 420px;
     position: absolute;
-    top: 16px;
+    top: 5px;
     right: -1000px; }
+
+#newCake {
+  width: 100%;
+  height: 500px;
+  background: #f8e8e8; }
+  #newCake .newleft {
+    width: 30%;
+    height: 460px;
+    padding: 14px;
+    float: left; }
+  #newCake .newright {
+    width: 67%;
+    float: right; }
+    #newCake .newright img {
+      margin-top: 10px; }
+
+#prolist {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  background: #fdfdf3; }
+  #prolist dl {
+    width: 29%;
+    height: 480px;
+    float: left;
+    margin-left: 0px;
+    padding: 10px; }
+  #prolist dd {
+    width: 300px;
+    height: 300px;
+    margin-left: 18px; }
+  #prolist dt {
+    width: 300px;
+    height: 70px;
+    margin-left: 18px;
+    color: #B2ACA3;
+    position: relative;
+    border-bottom: 1px dashed #B2ACA3; }
+    #prolist dt .pleft, #prolist dt .pright {
+      display: inline-block;
+      width: 130px;
+      height: 48px;
+      text-align: center;
+      float: left;
+      font-size: 14px;
+      margin-top: 20px; }
+    #prolist dt .pright {
+      margin-left: 40px; }
+      #prolist dt .pright i {
+        color: red; }
+  #prolist .shopping, #prolist .shopping1, #prolist .shopping2 {
+    width: 308px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    bottom: -260px; }
+    #prolist .shopping ul li, #prolist .shopping1 ul li, #prolist .shopping2 ul li {
+      width: 73px;
+      height: 50px;
+      border: 2px solid #fff;
+      float: left;
+      color: #fff;
+      text-align: center;
+      line-height: 50px; }
+    #prolist .shopping em, #prolist .shopping1 em, #prolist .shopping2 em, #prolist .shopping i, #prolist .shopping1 i, #prolist .shopping2 i {
+      display: inline-block;
+      width: 130px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      font-size: 14px;
+      color: #fff; }
+  #prolist #odd1 {
+    margin-left: 10px;
+    padding: 10px; }
+  #prolist #odd2 {
+    margin-left: 10px;
+    padding: 10px; }
+
+#cakedelivery {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px dashed #aaa; }
+  #cakedelivery .p2 {
+    display: inline-block;
+    width: 250px;
+    height: 60px;
+    float: left; }
+  #cakedelivery .p1 {
+    display: inline-block;
+    width: 120px;
+    height: 50px;
+    line-height: 70px;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    color: #c2af6b; }
+  #cakedelivery ul {
+    display: inline-block;
+    width: 600px;
+    height: 60px;
+    float: right;
+    font-size: 14px;
+    color: #c2af6b; }
+    #cakedelivery ul li {
+      width: 45px;
+      height: 20px;
+      border-right: 1px solid #B2ACA3;
+      float: right;
+      text-align: center;
+      margin-top: 25px; }
+    #cakedelivery ul a {
+      color: #c2af6b; }
+
+#purpose {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px dashed #B2ACA3; }
+  #purpose dl {
+    width: 155px;
+    height: 60px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 3px; }
+  #purpose dd, #purpose dt {
+    float: left; }
+  #purpose dt {
+    width: 80px;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 5px;
+    color: #c2af6b; }
+
+#information {
+  width: 100%;
+  height: 150px;
+  background: #fefaec; }
+  #information .massage1 {
+    display: inline-block;
+    width: 800px;
+    height: 60px;
+    float: right;
+    font-size: 16px;
+    color: #c2af6b;
+    margin-right: 70px;
+    border-bottom: #C2AF6B 1px dashed; }
+    #information .massage1 li {
+      width: 100px;
+      height: 20px;
+      border-right: 1px solid #B2ACA3;
+      float: left;
+      text-align: center;
+      margin-top: 25px; }
+    #information .massage1 a {
+      color: #c2af6b; }
+  #information .massage {
+    display: inline-block;
+    width: 1024px;
+    height: 60px;
+    float: right;
+    font-size: 12px;
+    color: #c2af6b; }
+    #information .massage li {
+      width: 220px;
+      height: 20px;
+      float: left;
+      text-align: center;
+      margin-top: 5px;
+      margin-left: 26px; }
+    #information .massage a {
+      color: #c2af6b; }
+
+#onlineserver {
+  width: 60px;
+  height: 150px;
+  position: absolute;
+  right: 0px;
+  top: 300px; }
+  #onlineserver .help {
+    display: none;
+    position: absolute;
+    right: 80px;
+    top: -20px; }
+  #onlineserver .wechat {
+    display: none;
+    position: absolute;
+    right: 80px;
+    top: 0px; }
 
 /*# sourceMappingURL=style.css.map */

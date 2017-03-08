@@ -3,46 +3,246 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="css/style.css"/>
-		<script type="text/javascript" src="js/go.js" ></script>
-		
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>		
+		<script src="js/promisecake.js"></script>
 		<script src="js/move1.js"></script>
 	</head>
 	<body>
+		<!---------------------------------导航---------------------------------->
 		<div id="header">
 			<ul>
-				<li><a href="###">首页<p>HOME</p></a></li>
-				<li><a href="###">蛋糕馆<p>CAKES</p></a></li>
+				<li><a href="###">首页<p>HOME</p></a>
+					
+				</li>
+				<li><a href="###" class="levelone">蛋糕馆<p>CAKES</p></a>
+					<ul class="menu1">
+						<a href="###"><li>芝士口味</li></a>
+						<a href="###"><li>慕斯口味</li></a>
+						<a href="###"><li>巧克力口味</li></a>
+						<a href="###"><li>拿破仑口味</li></a>
+						<a href="###"><li>鲜果口味</li></a>
+						<a href="###"><li>冰淇淋口味</li></a>
+						<a href="###"><li>奶油口味</li></a>
+					</ul>
+				</li>
 				<li><a href="###">礼品馆<p>GIFTS</p></a></li>
-				<li style="width:328px;height:88px;line-height:120px;"><img src="img/TNtoplistlogo.jpg" /></li>
-				<li><a href="###">我的诺心<p>MY LECAKE</p></a></li>
-				<li><a href="###">企业专区<p>CORPORATE</p</a>></li>
-				<li><a href="###">关于诺信<p>ABOUT US</p></a></li>
-			</ul>			
+				<li style="width:328px;height:50px;"><img src="img/TNtoplistlogo.jpg" /></li>
+				<li><a href="###" class="leveltwo">我的诺心<p>MY LECAKE</p></a>
+					<ul class="menu2">
+						<a href="###"><li>LEKLUB</li></a>
+						<a href="###"><li>慕斯口味</li></a>
+						<a href="###"><li>我的订单</li></a>
+						<a href="###"><li>找回密码</li></a>
+						<a href="###"><li>礼卡专区</li></a>
+						
+					</ul>
+				</li>
+				<li><a href="###" class="levelthree">企业专区<p>CORPORATE</p></a>
+					<ul class="menu3">
+						<a href="###"><li>企业SC</li></a>
+						<a href="###"><li>慕斯口味</li></a>
+						<a href="###"><li>大客户区</li></a>
+						<a href="###"><li>福利区</li></a>
+						<a href="###"><li>银行区</li>	</a>				
+					</ul>
+				</li>
+				<li><a href="###" class="levelfour">关于诺信<p>ABOUT US</p></a>
+					<ul class="menu4">
+						<a href="###"><li>诺心新闻</li></a>
+						<a href="###"><li>诺心公告</li></a>
+						<a href="###"><li>公司简介</li></a>
+						<a href="###"><li>诺心故事</li></a>
+						<a href="###"><li>品牌理念</li></a>
+						<a href="###"><li>诺心食材</li></a>
+						<a href="###"><li>联系我们</li></a>
+					</ul>
+				</li>
+			</ul>	
+			<div id="seleteCity">
+				<p>选择城市：</p>
+				<ul class="selCity">
+		    		<a href="###"><li>上海</li></a>
+		    		<a href="###"><li>西安</li></a>
+		    		<a href="###"><li>广州</li></a>
+		    		<a href="###"><li>深圳</li></a>
+		    		<a href="###"><li>北京</li></a>
+		    		<a href="###"><li>常州</li></a>
+		    		<a href="###"><li>无锡</li></a>
+		    		<a href="###"><li>江苏</li></a>
+		    		<a href="###"><li>南京</li></a>
+		    		<a href="###"><li>天津</li></a>
+		    		<a href="###"><li>绍兴</li></a>
+		    	</ul>
+			</div>
 		</div>
+		<!---------------------------公告------------------------------------->
 		<div id="enter">
 			<div class="dashed"><a href="###"><p class="city">西安市|V</p></a><p class="seaver">全国客服热线  187-9252-2353 服务时间：10:30-17:30</p>
 			<p class="shoppingcay"> 登录 | 注册  | 购物车2件 | 帮助</p></div>
 			<p class="useradvice"><marquee >重要公告：为方便广大用户选购蛋糕，根据用户反馈意见3月16日起甜心蛋糕将全面升级！"1磅" 改为：1-4人份，"2磅" 改为：4-8人份，"3磅" 改为：8-12人份！！！欢迎大家前来订购</marquee></p>			
 		</div>
+		<!-----------------------------实时新闻------------------------------>
 		<div id="wrap"></div>
+		<!---------------------不同时刻------------------------------------->
 		<div id="timecard">
 			<div class="time1">
 				<img src="img/14.jpg" />
-				<img src="img/16.jpg" />
+				<img src="img/12.jpg" />
 			</div>
 			<div class="time2">
-				<img src="img/11.jpg" />
+				<img src="img/2.jpg" />
 				<img src="img/10.jpg" />
 			</div>
 			<div class="time3">
 				<img src="img/12.jpg" />
-				<img src="img/2.jpg" />
+				<img src="img/16.jpg" />
 			</div>
 			<img src="img/4.jpg" id="leftImg"  />
 			<img src="img/2.jpg" id="centerImg"  />
 			<img src="img/16.jpg" id="rightImg"  />
 		</div>
+	  <!-------------------------------- 新品------------------------------------------->
+		<div id="newCake">
+			<div class="newleft">
+				<a href="###"><img src="img/shu320x460.jpg" width="300" height="470px" /></a>
+			</div>
+			<div class="newright">
+				<a href="###"><img src="img/3.jpg" width="665" height="230" /></a><br>
+				<a href="###"><img src="img/13.jpg" width="665" height="230"  /></a>
+			</div>			
+		</div>
+<!----------------------------------------产品系列-------------------------------------------------->
+		<div id="prolist">
+			
+			<dl id="odd">
+				<dd ><img src="img/list.jpg" width="310" height="300" /></dd>
+				<dt>
+					<p class="pleft">雪域牛乳芝士蛋糕 Le Cheesecake</p>
+					<p class="pright">1磅 价格：<i>198.00</i><br>甜度:<img src="img/26.jpg" /><img src="img/26.jpg" /></p>
+					<div class="shopping">
+						<ul>
+							<li>1磅</li>
+							<li>2磅</li>
+							<li>3磅</li>
+							<li>4磅</li>
+						</ul>
+						<a href="###"><em>加入购物车</em></a>
+						<a href="###"><i>立即购买</i></a>
+					</div>
+				</dt>
+			</dl>
+			<dl id="odd1">
+				<dd ><img src="img/list.jpg" width="310" height="300" /></dd>
+				<dt>
+					<p class="pleft">雪域牛乳芝士蛋糕 Le Cheesecake</p>
+					<p class="pright">1磅 价格：<i>198.00</i><br>甜度:<img src="img/26.jpg" /><img src="img/26.jpg" /></p>
+					<div class="shopping1">
+						<ul>
+							<li>1磅</li>
+							<li>2磅</li>
+							<li>3磅</li>
+							<li>4磅</li>
+						</ul>
+						<a href="###"><em>加入购物车</em></a>
+						<a href="###"><i>立即购买</i></a>
+					</div>
+				</dt>
+			</dl>
+			<dl id="odd2">
+				<dd ><img src="img/list.jpg" width="310" height="300" /></dd>
+				<dt>
+					<p class="pleft">雪域牛乳芝士蛋糕 Le Cheesecake</p>
+					<p class="pright">1磅 价格：<i>198.00</i><br>甜度:<img src="img/26.jpg" /><img src="img/26.jpg" /></p>
+					<div class="shopping2">
+						<ul>
+							<li>1磅</li>
+							<li>2磅</li>
+							<li>3磅</li>
+							<li>4磅</li>
+						</ul>
+						<a href="###"><em>加入购物车</em></a>
+						<a href="###"><i>立即购买</i></a>
+					</div>
+				</dt>
+			</dl>			
+		</div>
+<!------------------------------CEO-------------------------------------------------------------->
+		<div id="ceo">
+			<img src="img/TN_footbanner_07.jpg" width="100%" />
+		</div>
+		<div id="cakedelivery">
+			<p class="p2"><img src="img/TN_but_LOGO.png" /></p><p class="p1">新鲜配送上门</p>
+		    
+		    	<ul>
+		    		<a href="###"><li>上海</li></a>
+		    		<a href="###"><li>西安</li></a>
+		    		<a href="###"><li>广州</li></a>
+		    		<a href="###"><li>深圳</li></a>
+		    		<a href="###"><li>北京</li></a>
+		    		<a href="###"><li>常州</li></a>
+		    		<a href="###"><li>无锡</li></a>
+		    		<a href="###"><li>江苏</li></a>
+		    		<a href="###"><li>南京</li></a>
+		    		<a href="###"><li>天津</li></a>
+		    		<a href="###"><li>绍兴</li></a>
+		    	</ul>
+		  
+		</div>
+<!--------------------------------------------宗旨-------------------------------------------------->
+	    <div id="purpose">
+	    	<dl>
+	    		<dd><img src="img/l.png"/></dd>
+	    		<dt>全年无休</dt>
+	    	</dl>
+	    	<dl>
+	    		<dd><img src="img/e.png"/></dd>
+	    		<dt>全年无休</dt>
+	    	</dl>
+	    	<dl>
+	    		<dd><img src="img/c.png"/></dd>
+	    		<dt>全年无休</dt>
+	    	</dl>
+	    	<dl>
+	    		<dd><img src="img/a.png"/></dd>
+	    		<dt>全年无休</dt>
+	    	</dl>
+	    	<dl>
+	    		<dd><img src="img/k.png"/></dd>
+	    		<dt>全年无休</dt>
+	    	</dl>
+	    	<dl>
+	    		<dd><img src="img/e.png"/></dd>
+	    		<dt>全年无休</dt>
+	    	</dl>
+	    </div>
+<!-----------------------------------信息专栏------------------------------------------------------>
+	<div id="information">
+		<ul class="massage1">
+    		<a href="###"><li>关于我们</li></a>
+    		<a href="###"><li>人才招聘</li></a>
+    		<a href="###"><li>联系我们</li></a>
+    		<a href="###"><li>呼叫中心</li></a>
+    		<a href="###"><li>品牌理念</li></a>
+    		<a href="###"><li>客服服务</li></a>
+    		<a href="###"><li>上海工商</li></a>    		
+    	</ul>
+    	<ul class="massage">
+    		<a href="###"><li>沪ICP备 2132451212</li></a>
+    		<a href="###"><li>社会信用代码：12545152451656</li></a>
+    		<a href="###"><li>食品经营许可证</li></a>
+    		<a href="###"><li>诺心上海生产许可证</li></a>
+    		<a href="###"><li>copyright©2010-2016诺心lecake.com版权所有</li></a>
+    			<li>公司名称：诺心食品（上海）有限公司</li>
+    		<a href="###"><li>公司地址：上海徐汇区田林路140号28号楼</li></a>   
+    		<a href="###"><li>客服邮箱: services@lecake.com</li></a> 
+    		
+    	</ul>
+    	
+	</div>
+	<div id="onlineserver">
+		<p class="oLserver"><img src="img/service_help.png"  class="help" width="150" height="80" /><img src="img/ico_service.png" width="50" height="50" /> </p><br />
+		<p class="letter"><img src="img/wechat_qr_code.png" class="wechat" width="150" height="150" /><img src="img/ico_wechat.png"  width="50" height="50" /> </p>
+	</div>
 	</body>
 </html>
 <script>
@@ -50,12 +250,12 @@ window.onload = function(){
 		//1、创建轮播图（包括页面）
 		var oWrap = new AutoPlayerImgs(
 			"wrap",
-			1505,
+			1024,
 			544,
 			["img/1.jpg","img/13.jpg","img/18.jpg","img/20.jpg","img/21.jpg","img/3.jpg"],
 			["http://www.baidu.com","http://www.taobao.com","http://www.jd.cn","http://www.sohu.com","http://www.mobiletrain.org"],
 			2500,
-			{width:200,height:20,bgColor:"rgba(0,0,0,0.4)",highLightColor:"#fcc"}
+			{width:100,height:10,bgColor:"rgba(0,0,0,0.4)",highLightColor:"#fcc"}
 		);
 		oWrap.go();	
 	}
@@ -63,37 +263,22 @@ window.onload = function(){
 </script>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
 <script>
-	$(function(){
-		$(".time1>img:eq(0)").mouseover(function(){
-			$("#leftImg").animate({
-				"left":"0px"
-			},1000);
+	$(function(){		
+		project();
+		$(".levelone").click(function(){
+         $(this).next().toggle(500);
 		})
-		$("#leftImg").mouseout(function(){
-			$("#leftImg").animate({
-				"left":"-1000px"
-			},500);
-		})				
-		$(".time2>img:eq(1)").mouseover(function(){
-			$("#centerImg").animate({
-				"top":"0px"
-			},1000);
+		$(".leveltwo").click(function(){
+         $(this).next().toggle(500);
 		})
-		$("#centerImg").mouseout(function(){
-			$("#centerImg").animate({
-				"top":"-560px"
-			},500);
+		$(".levelthree").click(function(){
+         $(this).next().toggle(500);
 		})
-		
-		$(".time3>img:eq(0)").mouseover(function(){
-			$("#rightImg").animate({
-				"right":"20px"
-			},1000);
+		$(".levelfour").click(function(){
+         $(this).next().toggle(500);
 		})
-		$("#rightImg").mouseout(function(){
-			$("#rightImg").animate({
-				"right":"-1060px"
-			},500);
+		$(".city").click(function(){
+			$("#seleteCity").toggle(500);
 		})
 	})		
 </script>
