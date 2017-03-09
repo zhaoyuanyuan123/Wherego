@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/landing.css"/>
+	</head>
+	<body>
+		<div id="top"></div>
+		<div id="login">
+			<p><img src="../img/TN_but_LOGO.png"  width="100" height="35"/><i>用户登录</i> </p>
+		    <span>用户登录</span>
+		</div>
+		<div id="register2">
+			<div class="registerLeft">
+				
+					<p>手机号码:</p><input type="text" placeholder="请输入邮箱或者手机号" /><br>
+					<p>密码:</p><input type="text" placeholder="请输入6-18位数字字母下划线" /> <br>
+					<p>确认密码:</p><input type="text" placeholder="请输入6-18位数字字母下划线" /> <br>					
+					<p>验证码:</p><input type="text" class="replace" /> <br>
+					<p>手机验证码:</p><input type="text" class="gainRep" /> <a href="###" class="gain">获取验证码</a> 
+					<input type="button" class="logbtn"  value="提交注册信息" /> <br>
+					<label><input type="checkbox" id="check" />我已同意并且阅读</label><a href="###">《甜心协议》</a><br>
+					<p id="problem">登录时遇到任何问题，请查看帮助或者联系客服！</p>
+					
+				
+				
+			</div>
+			<div class="registerRight2">
+			  
+			    <p>已有甜心账号，请直接登录！</p>
+			    <a href="landing.html" class="regbtn">  登 录</a>
+			    <img src="../img/21.jpg" width="101%" height="280"/>		
+			</div>
+		</div>
+		<div id="footer"></div>
+	</body>
+</html>
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js" ></script>
+<script>
+	$("#top").load("top.html");
+	$("#footer").load("footer.html");
+</script>

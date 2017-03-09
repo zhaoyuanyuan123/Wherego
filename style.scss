@@ -131,6 +131,9 @@ i,em{
         font-size:16px;
         display:inline-block;
         margin-left:20%;
+        a{
+            color:red;
+        }
         
     }
     .useradvice{
@@ -309,7 +312,7 @@ i,em{
     width:$bodywidth;
     height:60px;
     border-bottom: 1px dashed #aaa;;
-    
+    background:#fefaec;
     .p2{
         display:inline-block;
         width:250px;
@@ -353,6 +356,7 @@ i,em{
     width:$bodywidth;
     height:60px;
     border-bottom:1px dashed #B2ACA3;
+     background:#fefaec;
     dl{
         width:155px;
         height:60px;       

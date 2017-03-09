@@ -36,7 +36,7 @@ function project(){
 			})
 			$("#odd").mouseover(function(){
 				$(".shopping").animate({
-					"bottom":"-15px"
+					"bottom":"0px"
 				},1000)
 			})
 			$(".shopping").mouseout(function(){
@@ -50,7 +50,7 @@ function project(){
 			})
 			$("#odd1").mouseover(function(){
 				$(".shopping1").animate({
-					"bottom":"-15px"
+					"bottom":"0px"
 				},1000)
 			})
 			$(".shopping1").mouseout(function(){
@@ -64,7 +64,7 @@ function project(){
 			})
 			$("#odd2").mouseover(function(){
 				$(".shopping2").animate({
-					"bottom":"-15px"
+					"bottom":"0px"
 				},1000)
 			})
 			$(".shopping2").mouseout(function(){

@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+ul li {
+  list-style: none; }
+
+a {
+  color: #fff;
+  text-decoration: none; }
+
+#banner {
+  height: 334px;
+  width: 100%;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  color: #000; }
+  #banner .bannerleft {
+    width: 19%;
+    height: 333px;
+    float: left; }
+    #banner .bannerleft img {
+      width: 100%; }
+    #banner .bannerleft .eatcake, #banner .bannerleft .timecake {
+      position: absolute;
+      left: 200px;
+      z-index: 10;
+      color: #000;
+      top: 30px;
+      display: none; }
+    #banner .bannerleft .eatcake li, #banner .bannerleft .timecake li {
+      background: rgba(10, 10, 10, 0.2);
+      border-bottom: 1px #fff dashed;
+      height: 30px;
+      width: 80px; }
+    #banner .bannerleft .timecake {
+      top: 130px; }
+  #banner #happle {
+    width: 80.3%;
+    height: 333px; }
+  #banner #happle:hover {
+    transform: translateX(5PX); }
+
+#cakelist, #cakelistwo {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  background: #fefaec;
+  margin-left: 0px; }
+  #cakelist dl, #cakelistwo dl {
+    width: 29%;
+    height: 250px;
+    float: left;
+    margin-left: 0px;
+    padding: 10px; }
+  #cakelist dd, #cakelistwo dd {
+    width: 300px;
+    height: 250px;
+    margin-left: -5px; }
+  #cakelist dl:hover dd, #cakelistwo dl:hover dd {
+    transform: translateX(4px); }
+  #cakelist dt, #cakelistwo dt {
+    width: 300px;
+    height: 70px;
+    margin-left: 18px;
+    color: #B2ACA3;
+    position: relative;
+    border-bottom: 1px dashed #B2ACA3; }
+    #cakelist dt .pleft, #cakelistwo dt .pleft, #cakelist dt .pright, #cakelistwo dt .pright {
+      display: inline-block;
+      width: 130px;
+      height: 48px;
+      text-align: center;
+      float: left;
+      font-size: 14px;
+      margin-top: 20px; }
+    #cakelist dt .pright, #cakelistwo dt .pright {
+      margin-left: 40px; }
+      #cakelist dt .pright i, #cakelistwo dt .pright i {
+        color: red; }
+  #cakelist .shopping, #cakelistwo .shopping, #cakelist .shopping1, #cakelistwo .shopping1, #cakelist .shopping2, #cakelistwo .shopping2 {
+    width: 312px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    bottom: -260px;
+    left: -26px; }
+    #cakelist .shopping ul li, #cakelistwo .shopping ul li, #cakelist .shopping1 ul li, #cakelistwo .shopping1 ul li, #cakelist .shopping2 ul li, #cakelistwo .shopping2 ul li {
+      width: 76px;
+      height: 50px;
+      border: 1px solid #fff;
+      float: left;
+      color: #fff;
+      text-align: center;
+      line-height: 50px; }
+    #cakelist .shopping em, #cakelistwo .shopping em, #cakelist .shopping1 em, #cakelistwo .shopping1 em, #cakelist .shopping2 em, #cakelistwo .shopping2 em, #cakelist .shopping i, #cakelistwo .shopping i, #cakelist .shopping1 i, #cakelistwo .shopping1 i, #cakelist .shopping2 i, #cakelistwo .shopping2 i {
+      display: inline-block;
+      width: 130px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      font-size: 14px;
+      color: #fff; }
+  #cakelist #odd, #cakelistwo #odd {
+    margin-left: 0px; }
+  #cakelist #odd1, #cakelistwo #odd1 {
+    margin-left: 28px; }
+  #cakelist #odd2, #cakelistwo #odd2 {
+    margin-left: 25px; }
+
+/*# sourceMappingURL=gifts.css.map */

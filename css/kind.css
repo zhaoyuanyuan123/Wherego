@@ -1,0 +1,79 @@
+#gifts {
+  width: 100%;
+  height: 800px;
+  border: 1px solid #fcc; }
+  #gifts .box1 {
+    width: 300px;
+    height: 800px;
+    border: 4px dashed pink; }
+  #gifts #cakelist, #gifts #cakelistwo {
+    width: 100%;
+    height: 410px;
+    overflow: hidden;
+    background: #fefaec;
+    margin-left: 0px; }
+    #gifts #cakelist dl, #gifts #cakelistwo dl {
+      width: 29%;
+      height: 400px;
+      float: left;
+      margin-left: 0px;
+      padding: 10px; }
+    #gifts #cakelist dd, #gifts #cakelistwo dd {
+      width: 300px;
+      height: 250px;
+      margin-left: -5px; }
+    #gifts #cakelist dl:hover dd, #gifts #cakelistwo dl:hover dd {
+      transform: translateX(3px); }
+    #gifts #cakelist dt, #gifts #cakelistwo dt {
+      width: 300px;
+      height: 150px;
+      margin-left: 18px;
+      color: #B2ACA3;
+      position: relative;
+      border-bottom: 1px dashed #B2ACA3; }
+      #gifts #cakelist dt .pleft, #gifts #cakelistwo dt .pleft, #gifts #cakelist dt .pright, #gifts #cakelistwo dt .pright {
+        display: inline-block;
+        width: 130px;
+        height: 48px;
+        text-align: center;
+        float: left;
+        font-size: 14px;
+        margin-top: 20px; }
+      #gifts #cakelist dt .pright, #gifts #cakelistwo dt .pright {
+        margin-left: 40px; }
+        #gifts #cakelist dt .pright i, #gifts #cakelistwo dt .pright i {
+          color: red; }
+      #gifts #cakelist dt .component, #gifts #cakelistwo dt .component {
+        font-size: 14px;
+        width: 300px; }
+    #gifts #cakelist .shopping, #gifts #cakelistwo .shopping, #gifts #cakelist .shopping1, #gifts #cakelistwo .shopping1, #gifts #cakelist .shopping2, #gifts #cakelistwo .shopping2 {
+      width: 312px;
+      height: 100px;
+      background: rgba(0, 0, 0, 0.8);
+      position: absolute;
+      bottom: -260px;
+      left: -26px; }
+      #gifts #cakelist .shopping ul li, #gifts #cakelistwo .shopping ul li, #gifts #cakelist .shopping1 ul li, #gifts #cakelistwo .shopping1 ul li, #gifts #cakelist .shopping2 ul li, #gifts #cakelistwo .shopping2 ul li {
+        width: 76px;
+        height: 50px;
+        border: 1px solid #fff;
+        float: left;
+        color: #fff;
+        text-align: center;
+        line-height: 50px; }
+      #gifts #cakelist .shopping em, #gifts #cakelistwo .shopping em, #gifts #cakelist .shopping1 em, #gifts #cakelistwo .shopping1 em, #gifts #cakelist .shopping2 em, #gifts #cakelistwo .shopping2 em, #gifts #cakelist .shopping i, #gifts #cakelistwo .shopping i, #gifts #cakelist .shopping1 i, #gifts #cakelistwo .shopping1 i, #gifts #cakelist .shopping2 i, #gifts #cakelistwo .shopping2 i {
+        display: inline-block;
+        width: 130px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 14px;
+        color: #fff; }
+    #gifts #cakelist #odd, #gifts #cakelistwo #odd {
+      margin-left: 0px; }
+    #gifts #cakelist #odd1, #gifts #cakelistwo #odd1 {
+      margin-left: 28px; }
+    #gifts #cakelist #odd2, #gifts #cakelistwo #odd2 {
+      margin-left: 25px; }
+
+/*# sourceMappingURL=kind.css.map */

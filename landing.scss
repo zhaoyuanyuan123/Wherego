@@ -1,0 +1,206 @@
+@charset "utf-8";
+$fontsize:20px;
+$bodywidth:100%;
+$fontcolor:#fff;
+$border:1px solid #fcc;
+a{
+    text-decoration: none;
+}
+i{
+    
+}
+body{
+    background:#fbe7e8;
+}
+#login{
+    width:98%;
+    height:97px;
+    margin:0 auto;
+    border-bottom:3px solid orangered;
+    border-top:1px solid #C2AF6B;
+    color:#fff;
+    background:#fefcec;
+  
+    p{
+        background:orangered;
+        width:165px;
+        margin-left:20px;
+        border-radius:8px;
+    }
+    img{
+        float:left;
+        margin-top:-8px;
+    }
+    i{
+        display:inline-block;
+        margin-top:-8px;
+        height:35px;
+        line-height:60px;
+        font-size:14px;
+        margin-left:3px;
+    }
+    span{
+        background:orangered;
+        width:115px;
+        height:30px;
+        margin-left:20px;
+        margin-top:36px;        
+        display:block;
+    }
+}
+#register{
+    width:98%;
+    height:391px;
+    background:#fefcec;
+    border-bottom:1px dashed goldenrod;
+    margin:0 auto;
+    overflow: hidden;
+    .registerLeft{
+        width:49%;
+        float:left;
+         height:360px;       
+        padding-top:3%;
+        p{
+            display:inline-block;
+            width:30%;
+            height:30px;
+            
+            text-align:right;
+            font-weight: bold ;
+            font-size: 14px;
+        }
+        input{
+            width:57%;
+            height:30px;
+           margin-top:25px;
+          margin-left:15px;
+        }
+        .replace{
+            width:35%;
+        }
+        .reptxt{
+            width:10%;
+            height:30px;
+            display:inline-block;
+            background:#CFA972;
+            margin-left:15px;
+            text-align:center;
+            line-height: 30px;
+        }
+        .repbtn{
+            width:10%;
+            height:20px;
+        }
+        label{
+            font-size:14px;
+            margin-left:30%;
+        }
+        #check{
+            width:15px;
+            height:15px;
+            background:#CFA972;
+            
+        }
+        .logbtn{
+            width:23%;
+            height:40px;
+            background: orangered;
+            color:#fff;
+            display:inline-block;
+            margin-left:30%;
+            border-radius:7px;
+            font-size: 16px;
+        }
+        a{
+            color:#0561aa;
+            margin-left:20px;
+            font-size: 14px;
+        }
+        #problem{
+            color:slategray;
+            width:90%;
+            margin-top:20px;
+            font-weight: normal;
+            font-size: 14px;
+        }
+    }
+    
+     .registerRight{
+         width:50%;
+        float:left; 
+         height:335px; 
+         padding-top:55px;  
+         border-left:1px solid #aaa;
+        p{
+            color:#8f8f9f;
+            font-size: 14px;
+            width:80%;
+            height:30px;          
+           line-height:30px;
+           margin-left:30px;
+        }  
+        .regbtn{
+            width:18%;
+            height:30px;
+            background: orangered;
+            color:#fff;
+            display:inline-block;
+            margin-left:30px;
+            border-radius:3px;
+            font-size: 16px;
+            line-height:30px;
+            text-align: center;
+            margin-top:10px;
+        }
+        img{
+            margin-top: 50px;
+          
+        }
+    }
+    
+}
+#register2{
+    @extend #register;
+    height:550px;    
+    .registerRight2{
+        @extend .registerRight;
+        height:495px;
+        img{
+            margin-top:140px;
+        }
+    }
+    .regRight{
+        width:50%;
+        float:left; 
+        height:233px;         
+        border-left:1px solid #aaa;
+        
+    }
+    .gainRep{
+        width:57%;
+    }
+    .gain{
+        width:70px;
+        height:30px;
+        position:absolute;
+        bottom:52px;
+        background:#8F8F9F;
+        left:360px;
+        a{
+             color:#fff;
+        }
+       
+        line-height: 30px;
+    }
+}
+#banner{
+    width:$bodywidth;
+    height:500px;
+}
+#oImg{
+    margin:0 auto;
+    img{
+        margin-left:10px;
+    }
+}
+

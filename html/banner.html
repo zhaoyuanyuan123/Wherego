@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/gifts.css"/>
+	</head>
+	<body>
+		<div id="banner">
+			<div class="bannerleft">
+			    <ul>
+			    	<a href="###"><li class="list1"><img src="../img/cake-list1_03.jpg" />
+			    	    <ul class="eatcake">
+							<a href="###"><li>芝士口味</li></a>
+							<a href="###"><li>慕斯口味</li></a>
+							<a href="###"><li>巧克力口味</li></a>
+							<a href="###"><li>拿破仑口味</li></a>
+							<a href="###"><li>鲜果口味</li></a>
+							<a href="###"><li>冰淇淋口味</li></a>
+							<a href="###"><li>奶油口味</li></a>
+						</ul>
+			    	</li></a>
+			    	<a href="###"><li class="list2"><img src="../img/cake-list_03.jpg"  />
+			    	    <ul class="timecake">
+							<a href="###"><li>纯真时刻</li></a>
+							<a href="###"><li>感恩时刻</li></a>
+							<a href="###"><li>浪漫时刻</li></a>
+							<a href="###"><li>天真时刻</li></a>
+							<a href="###"><li>午后时刻</li></a>
+							<a href="###"><li>团圆时刻</li></a>
+							<a href="###"><li>许愿时刻</li></a>
+						</ul>
+			    	</li></a>
+			    	<a href="###"><li><img src="../img/cake-list2_03.jpg"  /></li></a>
+			    </ul>
+			</div>
+			<a href="###"><img src="../img/21.jpg" id="happle" /></a>	
+		</div>
+	</body>
+</html>
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js" ></script>
+<script>
+	$(function(){
+		$("#top").load("../html/top.html");
+		$(".list1").click(function(){
+			$(".eatcake").toggle(500);
+		})
+		$(".list2").click(function(){
+			$(".timecake").toggle(500);
+		})
+	})
+</script>

@@ -1,0 +1,121 @@
+@charset "utf-8";
+$fontsize:20px;
+$bodywidth:100%;
+$fontcolor:#fff;
+$border:1px solid #fcc;
+#gifts{
+    width:$bodywidth;
+    height:800px;
+    border:$border;
+    .box1{
+        width:300px;
+        height:800px;
+        border:4px dashed pink;
+    }    
+    #cakelist{
+    width:$bodywidth;
+    height:410px;  
+    overflow: hidden;
+   background:#fefaec;
+   margin-left:0px; 
+    dl{
+        width:29%;
+        height:400px;
+        float:left;
+        margin-left:0px; 
+      padding:10px;
+    }
+    dd{
+        width:300px;
+        height:250px;       
+        margin-left:-5px;
+        
+        
+    }
+    dl:hover dd{
+        transform:translateX(3px);
+        
+    }
+    dt{
+        width:300px;
+        height:150px;           
+        margin-left:18px;
+        color:#B2ACA3;
+        position:relative;
+        border-bottom:1px dashed #B2ACA3;
+        .pleft{
+            display:inline-block;
+            width:130px;
+            height:48px;
+            text-align:center;                 
+            float:left;
+            font-size:14px;
+            margin-top:20px;
+        }
+        .pright{
+            @extend .pleft;
+            i{
+                color:red;
+            }
+            margin-left:40px;
+            
+        }
+        .component{
+            font-size:14px;
+            width:300px;
+        }
+    }
+    .shopping{
+        width:312px;
+        height:100px;     
+        background:rgba(0,0,0,0.8);
+        position:absolute;        
+        bottom:-260px;
+        left:-26px;
+        ul li{
+            width:76px;
+            height:50px;
+            border:1px solid #fff;
+            float:left;
+            color:#fff;
+            text-align:center;
+            line-height:50px;
+        }
+        em{
+            display:inline-block;
+            width:130px;
+            height:50px;           
+            text-align:center;
+            line-height:50px;
+            font-size: 14px;
+            color:#fff;
+        }
+        i{
+           @extend em;
+        }
+    }
+    .shopping1{
+       @extend .shopping;
+    }
+    .shopping2{
+        @extend .shopping;
+    }
+    #odd{
+        margin-left:0px;
+    }
+    #odd1{
+        margin-left:28px;
+     
+    }
+    #odd2{
+        margin-left:25px;
+       
+    }
+    
+}
+#cakelistwo{
+   @extend #cakelist;
+}
+
+    
+}

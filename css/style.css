@@ -106,6 +106,8 @@ i, em, #prolist .shopping i, #prolist .shopping1 i, #prolist .shopping2 i {
     font-size: 16px;
     display: inline-block;
     margin-left: 20%; }
+    #enter .shoppingcay a {
+      color: red; }
   #enter .useradvice {
     color: red;
     font-size: 16px;
@@ -239,7 +241,8 @@ i, em, #prolist .shopping i, #prolist .shopping1 i, #prolist .shopping2 i {
 #cakedelivery {
   width: 100%;
   height: 60px;
-  border-bottom: 1px dashed #aaa; }
+  border-bottom: 1px dashed #aaa;
+  background: #fefaec; }
   #cakedelivery .p2 {
     display: inline-block;
     width: 250px;
@@ -274,7 +277,8 @@ i, em, #prolist .shopping i, #prolist .shopping1 i, #prolist .shopping2 i {
 #purpose {
   width: 100%;
   height: 60px;
-  border-bottom: 1px dashed #B2ACA3; }
+  border-bottom: 1px dashed #B2ACA3;
+  background: #fefaec; }
   #purpose dl {
     width: 155px;
     height: 60px;
