@@ -223,6 +223,12 @@ i, em, #prolist .shopping i, #prolist .shopping1 i, #prolist .shopping2 i {
       color: #fff;
       text-align: center;
       line-height: 50px; }
+    #prolist .shopping li:hover a, #prolist .shopping1 li:hover a, #prolist .shopping2 li:hover a {
+      color: orangered; }
+    #prolist .shopping em:hover a, #prolist .shopping1 em:hover a, #prolist .shopping2 em:hover a, #prolist .shopping i:hover a, #prolist .shopping1 i:hover a, #prolist .shopping2 i:hover a {
+      color: orangered; }
+    #prolist .shopping i:hover a, #prolist .shopping1 i:hover a, #prolist .shopping2 i:hover a {
+      color: orangered; }
     #prolist .shopping em, #prolist .shopping1 em, #prolist .shopping2 em, #prolist .shopping i, #prolist .shopping1 i, #prolist .shopping2 i {
       display: inline-block;
       width: 130px;
@@ -336,9 +342,10 @@ i, em, #prolist .shopping i, #prolist .shopping1 i, #prolist .shopping2 i {
 #onlineserver {
   width: 60px;
   height: 150px;
-  position: absolute;
-  right: 0px;
-  top: 300px; }
+  position: fixed;
+  right: 30px;
+  top: 280px;
+  z-index: 100; }
   #onlineserver .help {
     display: none;
     position: absolute;

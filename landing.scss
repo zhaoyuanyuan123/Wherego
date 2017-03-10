@@ -39,13 +39,15 @@ body{
         font-size:14px;
         margin-left:3px;
     }
-    span{
+    #enter{
         background:orangered;
         width:115px;
         height:30px;
         margin-left:20px;
-        margin-top:36px;        
+        margin-top:20px;        
         display:block;
+        text-align:center;
+        line-height:30px;
     }
 }
 #register{
@@ -63,33 +65,42 @@ body{
         p{
             display:inline-block;
             width:30%;
-            height:30px;
-            
+            height:30px;            
             text-align:right;
             font-weight: bold ;
             font-size: 14px;
         }
         input{
             width:57%;
-            height:30px;
-           margin-top:25px;
+            height:30px;          
           margin-left:15px;
+        }
+        span{
+            display:block;
+            font-size: 14px;
+            color:red;
+            width:60%;
+            height:25px;                   
+            text-align:left;
+            margin-left:32%;
         }
         .replace{
             width:35%;
         }
         .reptxt{
-            width:10%;
+            width:13%;
             height:30px;
             display:inline-block;
             background:#CFA972;
-            margin-left:15px;
+            margin-left:10px;
             text-align:center;
             line-height: 30px;
+            color:#fff;
         }
         .repbtn{
-            width:10%;
-            height:20px;
+            width:11%;
+            height:25px;
+            margin-left:5px;
         }
         label{
             font-size:14px;
@@ -129,7 +140,7 @@ body{
          width:50%;
         float:left; 
          height:335px; 
-         padding-top:55px;  
+         padding-top:45px;  
          border-left:1px solid #aaa;
         p{
             color:#8f8f9f;
@@ -150,10 +161,10 @@ body{
             font-size: 16px;
             line-height:30px;
             text-align: center;
-            margin-top:10px;
+            margin-top:0px;
         }
         img{
-            margin-top: 50px;
+            margin-top: 30px;
           
         }
     }
@@ -161,12 +172,12 @@ body{
 }
 #register2{
     @extend #register;
-    height:550px;    
+    height:480px;    
     .registerRight2{
         @extend .registerRight;
-        height:495px;
+        height:425px;
         img{
-            margin-top:140px;
+            margin-top:100px;
         }
     }
     .regRight{
@@ -183,7 +194,7 @@ body{
         width:70px;
         height:30px;
         position:absolute;
-        bottom:52px;
+        bottom:78px;
         background:#8F8F9F;
         left:360px;
         a{

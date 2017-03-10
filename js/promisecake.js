@@ -1,73 +1,72 @@
 
 function project(){
-			$(".time1>img:eq(0)").mouseover(function(){
+			$(".time1>img:eq(0)").mouseenter(function(){
 				$("#leftImg").animate({
 					"left":"-5px"
-				},500);				
-			})
-			$(".time1>img").mouseout(function(){
+				},1500);				
+			})			
+			$(".time1>img").mouseleave(function(){
 				$("#leftImg").animate({
 					"left":"-1000px"
-				},500);
+				},1000);
 			})
-			$(".time2>img:eq(1)").mouseover(function(){
+			$(".time2>img:eq(1)").mouseenter(function(){
 				$("#centerImg").animate({
 					"top":"0px"
-				},500);
+				},1500);
 			})
-			$(".time2>img").mouseout(function(){
+			$(".time2>img").mouseleave(function(){
 				$("#centerImg").animate({
 					"top":"-560px"
-				},500);
+				},1000);
 			})			
-			$(".time3>img:eq(0)").mouseover(function(){
+			$(".time3>img:eq(0)").mouseenter(function(){
 				$("#rightImg").animate({
 					"right":"10px"
-				},500);
+				},1500);
 			})
-			$(".time3>img").mouseout(function(){
+			$(".time3>img").mouseleave(function(){
 				$("#rightImg").animate({
 					"right":"-1060px"
-				},500);
+				},1000);
 			})
 			
-			$(".shopping").mouseover(function(){
-			    $(".shopping").stop();
-			})
-			$("#odd").mouseover(function(){
+					
+//			$("#prolist").moseover(function(){
+//				$("#odd").stop();
+//				$("#odd1").stop();
+//				$("#odd2").stop();
+//			})
+			$("#odd").mouseenter(function(){
+							
 				$(".shopping").animate({
 					"bottom":"0px"
-				},1000)
+				},1500)
 			})
-			$(".shopping").mouseout(function(){
+			$("#odd").mouseleave(function(){
 				$(".shopping").animate({
 					"bottom":"-300px"
 				},1000)
 			})
 			
-			$(".shopping1").mouseover(function(){
-			    $(".shopping").stop();
-			})
-			$("#odd1").mouseover(function(){
+			$("#odd1").mouseenter(function(){
+				
 				$(".shopping1").animate({
 					"bottom":"0px"
-				},1000)
+				},1500)
 			})
-			$(".shopping1").mouseout(function(){
+			$("#odd1").mouseleave(function(){
 				$(".shopping1").animate({
 					"bottom":"-300px"
 				},1000)
-			})
-			
-			$(".shopping2").mouseover(function(){
-			    $(".shopping").stop();
-			})
-			$("#odd2").mouseover(function(){
+			})						
+			$("#odd2").mouseenter(function(){
+				
 				$(".shopping2").animate({
 					"bottom":"0px"
-				},1000)
+				},1500)
 			})
-			$(".shopping2").mouseout(function(){
+			$("#odd2").mouseleave(function(){
 				$(".shopping2").animate({
 					"bottom":"-300px"
 				},1000)
@@ -196,6 +195,51 @@ function AutoPlayerImgs(boxId,width,height,imgs,urls,speed,btn){
 		}
 		ulBtnObj.children[this.currOrd].style.backgroundColor = this.btn.highLightColor;
 		
+	}	
+function username(data){	
+			let txt=$(".userName").val();	
+			var  flag=1;
+			$(".userPwd").val("");
+			$("pwdSpan").html("");
+			for(i=0;i<data.length;i++){
+				if(data[i].name==txt){							
+					flag=1;
+					break;
+				}
+				if(data[i].name!=txt){					
+					flag=0;						
+				}								
+			}
+			if(flag==0){
+					$(".nameSpan").html("*你输入的用户不存在,请重新输入！！！");
+					$(".userName").focus(function(){
+						$(".nameSpan").html("");
+					})
+			}
+			
+		}
+function userPwd(data){			
+		if($(".userName").val()==""){
+			$(".nameSpan").html("*—*亲！请输入用户名！");
+		}else{
+				let pwdTxt=$(".userPwd").val();	
+			 	let txt=$(".userName").val();	
+				var  flag=1;
+				for(i=0;i<data.length;i++){
+					if(data[i].password==pwdTxt&&data[i].name==txt){							
+						flag=1;
+						break;
+					}
+					if(data[i].password!=pwdTxt&&data[i].name==txt){					
+						flag=0;						
+					}								
+				}
+				if(flag==0){
+						$(".pwdSpan").html("*密码不正确,请重新输入！！！");
+						$(".userPwd").focus(function(){
+							$(".pwdSpan").html("");
+						})
+				}
+		}
+	 		
 	}
-	
-	

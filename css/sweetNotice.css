@@ -1,5 +1,12 @@
+* {
+  margin: 0;
+  padding: 0; }
+
 body {
   background: #fefcec; }
+
+img {
+  border: none; }
 
 #sweetHeater {
   font-size: 18px;
@@ -63,6 +70,8 @@ body {
       margin-left: 30px;
       margin-top: 10px;
       border-bottom: 1px dashed #000; }
+    #idea .ideaLeft a:hover li {
+      color: #FF4500; }
   #idea .ideaRight {
     width: 71%;
     height: 720px;
@@ -73,5 +82,31 @@ body {
     padding-left: 2%;
     padding-right: 4px;
     padding-top: 10px; }
+
+#bannerImg {
+  width: 99%;
+  padding: 10px;
+  height: 350px;
+  margin: 0 auto; }
+  #bannerImg img {
+    margin: -3px; }
+
+#addCompany {
+  width: 89%;
+  height: 400px;
+  margin: 0 auto;
+  background: #dfd0b3;
+  padding: 5%; }
+  #addCompany img {
+    margin: 50px; }
+  #addCompany p {
+    width: 180px;
+    height: 50px;
+    font-size: 18px;
+    position: absolute;
+    right: 60px;
+    color: #666; }
+  #addCompany a:hover p {
+    color: brown; }
 
 /*# sourceMappingURL=sweetNotice.css.map */

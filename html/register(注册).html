@@ -14,20 +14,19 @@
 		<div id="register2">
 			<div class="registerLeft">
 				
-					<p>手机号码:</p><input type="text" placeholder="请输入邮箱或者手机号" /><br>
-					<p>密码:</p><input type="text" placeholder="请输入6-18位数字字母下划线" /> <br>
-					<p>确认密码:</p><input type="text" placeholder="请输入6-18位数字字母下划线" /> <br>					
-					<p>验证码:</p><input type="text" class="replace" /> <br>
-					<p>手机验证码:</p><input type="text" class="gainRep" /> <a href="###" class="gain">获取验证码</a> 
-					<input type="button" class="logbtn"  value="提交注册信息" /> <br>
-					<label><input type="checkbox" id="check" />我已同意并且阅读</label><a href="###">《甜心协议》</a><br>
+					<p>用户名:</p><input type="text"  class="cell" /><span class="cellSpan"></span>
+					<p>密码:</p><input type="text"  class="new"/> <span class="newSpan"></span>
+					<p>确认密码:</p><input type="text"  class="virify"/> <span class="virifySpan"></span>					
+					<p>验证码:</p><input type="text" class="replace" /> <span class="reptxt">2a5d</span>
+					            <input type="button" class="repbtn" value="换一个" /><span class="repSpan"></span><br>									
+					<label><input type="checkbox" id="check" />我已同意并且阅读</label><a href="###">《甜心协议》</a><br><span></span>
+					<input type="button" class="logbtn"  value="提交注册信息" /> <br><span></span>
 					<p id="problem">登录时遇到任何问题，请查看帮助或者联系客服！</p>
 					
 				
 				
 			</div>
-			<div class="registerRight2">
-			  
+			<div class="registerRight2">			  
 			    <p>已有甜心账号，请直接登录！</p>
 			    <a href="landing.html" class="regbtn">  登 录</a>
 			    <img src="../img/21.jpg" width="101%" height="280"/>		
@@ -38,6 +37,81 @@
 </html>
 <script type="text/javascript" src="../js/jquery-1.8.3.min.js" ></script>
 <script>
-	$("#top").load("top.html");
+	
+	
+	$(function(){
+		$("#top").load("top.html");
 	$("#footer").load("footer.html");
+	$(".repbtn").click(function(){	   
+		    var arrCode = [0,1,2,3,4,5,6,7,8,9,"A","B","C","D","E","F","G","H","I",
+			"J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+			var len=arrCode.length;
+			var res=" ";
+			for(i=1;i<=4;i++){
+			   
+				res+=arrCode[parseInt(Math.random()*len)];
+			}
+			$(".reptxt").html(res);
+		})
+	$(".replace").blur(function(){	
+			if($(".replace").val()==$(".reptxt").html()){
+				$(".repSpan").html("");				
+			}else{
+				$(".repSpan").html("*亲❤验证码错误");
+			}
+		})
+	$(".cell").blur(function(){
+		let num=$(".cell").val();
+		let reg=/^(187|138|155|177|132|152)[0-9]{8}/;
+		
+		if(reg.test(num)&&num.length==11){	
+			$(".cellSpan").html("");
+		}else{
+			$(".cellSpan").html("*亲❤请输入正确的手机号或邮箱");
+		}
+	})	
+	$(".new").blur(function(){
+		if($(".cell").val()==""){
+			$(".cellSpan").html("*亲❤请输入手机号或邮箱");
+		}else{
+			let num=$(".new").val();
+			let reg=/((?=[\x21-\x7e]+)[^A-Za-z0-9])/;
+			if(reg.test(num)){	
+				$(".newSpan").html("");
+			}else{
+				$(".newSpan").html("*请输入6-8位数字字母下划线组合");
+			}
+		}
+		
+	})
+	$(".virify").blur(function(){
+		if($(".new").val()==""){
+			$(".newSpan").html("*请输入密码");
+			$(".cellSpan").html("*亲❤请输入手机号或邮箱");
+		}else{
+			let num=$(".virify").val();		
+			if(num==$(".new").val()){	
+				$(".virifySpan").html("");
+			}else{
+				$(".virifySpan").html("*亲！密码不一致");
+			}
+		}
+		
+	})
+	$(".logbtn").click(function(){
+		let cell=$(".cell").val();//用户名
+		let cellSpan=$(".cellSpan").html();
+		let replace=$(".replace").val();//验证码
+		let reTxt=$(".repSpan").html();console.log(reTxt)
+		let virify=$(".virify").val();//确认密码	
+		let virifySpan=$(".virifySpan").html();
+		let Onew=$(".new").val();//新密码的
+		let newSpan=$(".newSpan").html();
+		let check=$("#check")[0].checked;
+		if(cell!=""&&cellSpan==""&&replace!=""&& reTxt==""&&virify!=""&&virifySpan==""&&Onew!=""&&newSpan==""&&check==true){
+			alert("可以注册了");
+		}
+	})
+	})
+	
 </script>

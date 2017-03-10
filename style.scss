@@ -279,6 +279,15 @@ i,em{
             text-align:center;
             line-height:50px;
         }
+        li:hover a{
+            color:orangered;
+        }
+        em:hover a{
+            color:orangered;
+        }
+        i:hover a{
+            color:orangered;
+        }
         em{
             display:inline-block;
             width:130px;
@@ -431,9 +440,9 @@ i,em{
 #onlineserver{
     width:60px;
     height:150px;   
-    position:absolute;
-    right:0px;
-    top:300px;
+    position:fixed;
+    right:30px;
+    top:280px;z-index:100;
   
     .help{
      display:none;

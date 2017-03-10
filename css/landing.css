@@ -27,13 +27,15 @@ body {
     line-height: 60px;
     font-size: 14px;
     margin-left: 3px; }
-  #login span {
+  #login #enter {
     background: orangered;
     width: 115px;
     height: 30px;
     margin-left: 20px;
-    margin-top: 36px;
-    display: block; }
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    line-height: 30px; }
 
 #register, #register2 {
   width: 98%;
@@ -57,21 +59,30 @@ body {
     #register .registerLeft input, #register2 .registerLeft input {
       width: 57%;
       height: 30px;
-      margin-top: 25px;
       margin-left: 15px; }
+    #register .registerLeft span, #register2 .registerLeft span {
+      display: block;
+      font-size: 14px;
+      color: red;
+      width: 60%;
+      height: 25px;
+      text-align: left;
+      margin-left: 32%; }
     #register .registerLeft .replace, #register2 .registerLeft .replace {
       width: 35%; }
     #register .registerLeft .reptxt, #register2 .registerLeft .reptxt {
-      width: 10%;
+      width: 13%;
       height: 30px;
       display: inline-block;
       background: #CFA972;
-      margin-left: 15px;
+      margin-left: 10px;
       text-align: center;
-      line-height: 30px; }
+      line-height: 30px;
+      color: #fff; }
     #register .registerLeft .repbtn, #register2 .registerLeft .repbtn {
-      width: 10%;
-      height: 20px; }
+      width: 11%;
+      height: 25px;
+      margin-left: 5px; }
     #register .registerLeft label, #register2 .registerLeft label {
       font-size: 14px;
       margin-left: 30%; }
@@ -102,7 +113,7 @@ body {
     width: 50%;
     float: left;
     height: 335px;
-    padding-top: 55px;
+    padding-top: 45px;
     border-left: 1px solid #aaa; }
     #register .registerRight p, #register2 .registerRight p, #register2 .registerRight2 p {
       color: #8f8f9f;
@@ -122,16 +133,16 @@ body {
       font-size: 16px;
       line-height: 30px;
       text-align: center;
-      margin-top: 10px; }
+      margin-top: 0px; }
     #register .registerRight img, #register2 .registerRight img, #register2 .registerRight2 img {
-      margin-top: 50px; }
+      margin-top: 30px; }
 
 #register2 {
-  height: 550px; }
+  height: 480px; }
   #register2 .registerRight2 {
-    height: 495px; }
+    height: 425px; }
     #register2 .registerRight2 img {
-      margin-top: 140px; }
+      margin-top: 100px; }
   #register2 .regRight {
     width: 50%;
     float: left;
@@ -143,7 +154,7 @@ body {
     width: 70px;
     height: 30px;
     position: absolute;
-    bottom: 52px;
+    bottom: 78px;
     background: #8F8F9F;
     left: 360px;
     line-height: 30px; }
