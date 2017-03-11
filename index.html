@@ -78,9 +78,22 @@
 		<!---------------------------公告------------------------------------->
 		<div id="enter">
 			<div class="dashed"><a href="###"><p class="city">西安市|V</p></a><p class="seaver">全国客服热线  187-9252-2353 服务时间：10:30-17:30</p>
-			<p class="shoppingcay"> <a href="html/landing.html">登录</a> |<a href="html/register(注册).html"> 注册</a> |<a href="###"> 购物车2件 </a>|<a href="###"> 帮助</a></p></div>
+			<p class="shoppingcay"> <a href="html/landing.html">登录</a> |<a href="html/register(注册).html"> 注册</a> |<a href="###" class="showCar"> 购物车2件 </a>|<a href="###"> 帮助</a></p></div>
 			<p class="useradvice"><marquee >重要公告：为方便广大用户选购蛋糕，根据用户反馈意见3月16日起甜心蛋糕将全面升级！"1磅" 改为：1-4人份，"2磅" 改为：4-8人份，"3磅" 改为：8-12人份！！！欢迎大家前来订购</marquee></p>			
 		</div>
+		<div id="carInfor">
+			<p>您购物车内的商品(<i class="commodity">2</i>)</p>
+			<dl>
+				<dd><img src="img/12120.jpg" width="65" height="65" /></dd>
+				<dt>
+					<span class="cakeName">哈密瓜拿破仑蛋糕</span>
+					<span class="cakeNumb"><i>1磅</i><em>￥198.00</em></span>
+				</dt>
+				<span class="addcom">共计<em class="oNumble">2</em>件商品，金额小计 <em>￥398.00</em></span>
+				<a href="html/flow.html"><span class="goCar">去购物结算</span></a>
+			</dl>
+		</div>
+			
 		<!-----------------------------实时新闻------------------------------>
 		<div id="wrap"></div>
 		<!---------------------不同时刻------------------------------------->
@@ -126,7 +139,7 @@
 							<li><a href="###">3磅</a></li>
 							<li><a href="###">4磅</a></li>
 						</ul>
-						<em><a href="###">加入购物车</a></em>
+						<em class="carsh"><a href="###">加入购物车</a></em>
 						<i><a href="###">立即购买</a></i>
 					</div>
 				</dt>
@@ -143,7 +156,7 @@
 							<li><a href="###">3磅</a></li>
 							<li><a href="###">4磅</a></li>
 						</ul>
-						<em><a href="###">加入购物车</a></em>
+						<em class="carshopp"><a href="###">加入购物车</a></em>
 						<i><a href="###">立即购买</a></i>
 					</div>
 				</dt>
@@ -160,7 +173,7 @@
 							<li><a href="###">3磅</a></li>
 							<li><a href="###">4磅</a></li>
 						</ul>
-						<em><a href="###">加入购物车</a></em>
+						<em class="genius"><a href="###">加入购物车</a></em>
 						<i><a href="###">立即购买</a></i>
 					</div>
 				</dt>
@@ -243,6 +256,33 @@
 		<p class="oLserver"><img src="img/service_help.png"  class="help" width="150" height="80" /><img src="img/ico_service.png" width="50" height="50" /> </p><br />
 		<p class="letter"><img src="img/wechat_qr_code.png" class="wechat" width="150" height="150" /><img src="img/ico_wechat.png"  width="50" height="50" /> </p>
 	</div>
+	
+		<div id="box">
+			<p class="car">1件商品加入购物车</p><p class="close">关闭</p>
+			<dl>
+				<dd><img src="img/10937.jpg" width="150" height="128"</dd>
+				<dt>雪域牛乳芝士蛋糕<br>
+				    加入数量：<input type="button" value="-" id="minus"  />
+							<input type="text" id="text" value="1" />
+							<input type="button" value="+" id="plus"  /><br>
+					总计金额：￥198:00<br>
+					<p class="goOn">继续购买</p><p class="account">去结算</p>
+				</dt>
+			</dl>
+		</div>
+		<div id="boxtwo">
+			<p class="cartwo">1件商品加入购物车</p><p class="closetwo">关闭</p>
+			<dl>
+				<dd><img src="img/_15145.jpg" width="150" height="128"</dd>
+				<dt>草莓拿破仑蛋糕<br>
+				    加入数量：<input type="button" value="-" id="minus"  />
+							<input type="text" id="text" value="1" />
+							<input type="button" value="+" id="plus"  /><br>
+					总计金额：￥188:00<br>
+					<p class="goon">继续购买</p><p class="oAccount">去结算</p>
+				</dt>
+			</dl>
+		</div>
 	</body>
 </html>
 <script>
@@ -280,5 +320,84 @@ window.onload = function(){
 		$(".city").click(function(){
 			$("#seleteCity").toggle(500);
 		})
+		$(".close").click(function(){
+			$("#box").toggle(500);
+		})
+		$(".carsh").click(function(){
+			$("#box").toggle(500);
+		})
+		$(".closetwo").click(function(){
+			$("#boxtwo").toggle(500);
+		})
+		$(".carshopp").click(function(){
+			$("#boxtwo").toggle(500);
+		})
+		
+		$(".genius").click(function(){
+			$("#box").toggle(500);
+		})
+		$(".showCar").mouseenter(function(){
+				$("#carInfor").css("display","block");
+			})
+		$("#carInfor").mouseleave(function(){
+			$("#carInfor").css("display","none");
+		})
 	})		
+</script>
+
+<script>
+	var minus=document.getElementById("minus");
+	var oText=document.getElementById("text");
+	var plus=document.getElementById("plus");	
+	plus.onclick=function(){
+				var n=parseInt(text.value);
+				if(n<199&&n>0){
+					oText.value= n+1;	
+					minus.disabled=false;
+					minus.style.cursor="pointer"				
+					if(oText.value==199){
+						plus.disabled=true;
+						plus.style.cursor="no-drop";
+					}
+				}else{
+					plus.disabled=true;
+					plus.style.cursor="no-drop";
+				}
+			}
+			minus.onclick=function(){
+				var n=parseInt(text.value);	
+				if(n>1&&n<200){
+					oText.value=n-1;
+					plus.disabled=false;
+					plus.style.cursor="pointer"	;			
+					if(oText.value==1){
+						minus.disabled=true;
+						minus.style.cursor="no-drop"
+					}
+				}else{
+					minus.disabled=true;
+					minus.style.cursor="no-drop"
+				}
+			}
+			oText.onkeyup=function(){
+				setTimeout(function(){
+					var txt=oText.value
+					var n1=txt.replace(/\D/g,"")?txt.replace(/\D/g,""):1;//\D非数字
+					oText.value=n1<199?n1:1;
+					if(txt==1){
+						minus.disabled =true;
+						minus.style.cursor="no-drop";
+					}else{
+						minus.disabled =false;
+						minus.style.cursor="pointer";
+					}
+					if(txt==199){
+						plus.disabled=true;
+						plus.style.cursor="no-drop"
+					}else{
+						plus.disabled=false;
+						plus.style.cursor="pointer";
+					}
+				},500)				
+			}
 </script>

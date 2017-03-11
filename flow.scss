@@ -1,0 +1,100 @@
+@charset "utf-8";
+$bodyWidth:100%;
+$border:1px dashed cadetblue;
+body{
+    background:#FEFAEC;
+}
+#Information{
+    width:$bodyWidth;
+    height:200px;
+    border:$border;
+    border-top:none;
+    background:#fefaec;
+    p{
+        border:1px solid #ccc;
+        border-right:none;
+        margin-left:30px;
+        width:187px;
+        height:40px;
+        line-height:42px;
+        display:inline-block;
+        background:#f2f2f2;
+        float:left;
+        color:#515151;
+        
+        font-size:14px;
+        input{
+            width:15px;
+            height:15px;
+        }
+    }
+    
+}
+#inforList{
+    width:$bodyWidth;
+    height:82px;
+    .labelImg{
+       margin-left:3%;
+    }
+    .Pinfor{
+        margin-left:10px;
+        display:inline-block;
+        width:125px;
+        font-size: 14px;
+        color:#515151;
+    }
+    .price{
+        color:darkred;
+        display:inline-block;
+        width:80px;
+        text-align:center;
+        margin-left:20px;
+      
+    }
+    .integal{
+        color:darkred;
+        display:inline-block;
+        width:50px;
+        text-align:center;
+        margin-left:40px;
+       
+    }
+    #minus,#plus{
+                display:inline-block;
+                width:20px;
+                height: 20px;
+                font-size: 12px;
+            }
+    #text{
+        width:40px;
+        height:20px;
+        font-size: 14px;
+        text-align:center;
+        line-height:20px;
+    }
+    .txt{
+        width:100px;margin-left:30px;
+    }
+    .select{
+        margin-left:60px;
+        width:15px;
+        height:15px;
+    }
+    .delete{
+        margin-left:50px;
+    }
+}
+.count{
+    font-size: 16px;
+  
+    margin-top:20px;
+}
+.oaccount{
+    width:65px;
+    height:35px;
+    background:orangered;
+    color:#fff;   
+    display:inline-block;
+}
+
+

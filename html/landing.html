@@ -60,7 +60,7 @@
 		}
 		$(".userName").blur(function(){
 			$.getJSON("../json/userInformation.json",username);	
-			console.log(username);
+			//console.log("username"+username);
 		})
 		$(".userPwd").blur(function(){
 			$.getJSON("../json/userInformation.json",userPwd);
@@ -85,13 +85,16 @@
 			}
 			//保存用户cookie；
 			let checked=$("#check")[0].checked;
-			if(checked){
+			if(nameSpan==""&&pwdSpan==""){
+				if(checked){
 				saveCookie("UserName",username,3);
 				saveCookie("UserPassword",userpwd,7);
-			}else{
-				deleteCookie("UserName");
-				deleteCookie("UserPassword");
-			}										
+				}else{
+					deleteCookie("UserName");
+					deleteCookie("UserPassword");
+				}	
+			}
+												
 		})
 		if(getCookie("UserName")){		
 			let UserName=getCookie("UserName");

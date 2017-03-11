@@ -457,3 +457,164 @@ i,em{
         top:0px;
     }
 }
+#box{
+    width:500px;
+    height:165px;
+    border:2px solid orangered;
+    position:absolute;
+    top:1400px;
+    left:260px;
+    background:#fff;
+    display:none;
+   .car{
+        width:91.9%;
+        height:35px;
+        display:inline-block;      
+        float:left;
+        background:orangered;
+        line-height: 35px;
+        color:#fff;
+   }
+   .close{
+        width:8%;
+        height:35px;
+        display:inline-block;
+        color:#fff;
+        float:right;
+        line-height: 35px;
+        text-align:center;
+        background:orangered;
+        cursor: pointer;
+   }
+   dd{
+       float:left;
+   }
+   dt{
+       float:left;
+       #minus,#plus{
+                display:inline-block;
+                width:20px;
+                height: 20px;
+                font-size: 12px;
+            }
+            #text{
+                width:40px;
+                height:20px;
+                font-size: 14px;
+                text-align:center;
+                line-height:20px;
+            }
+            .goOn{
+                width:70px;
+                height:40px;
+                background:#FF4500;
+                display:inline-block;
+                color:#fff;
+                text-align:center;
+                line-height:40px;
+                margin-top:20px;
+                 margin-left:50px;
+                 cursor: pointer;
+            }
+            .account{
+                @extend .goOn;
+                margin-left:50px;
+                cursor: pointer;
+            }
+   }
+   
+}
+#boxtwo{
+    @extend #box;
+    #minus2,#plus2{
+                display:inline-block;
+                width:20px;
+                height: 20px;
+                font-size: 12px;
+            }
+    #text2{
+        width:40px;
+        height:20px;
+        font-size: 14px;
+        text-align:center;
+        line-height:20px;
+    }
+    .goon{
+        @extend .goOn;
+    }
+     .oAccount{
+         @extend .account;
+     }
+     .cartwo{
+        @extend .car;
+     }
+     .closetwo{
+         @extend .close;
+     }
+}
+#carInfor{
+    width:222px;
+    height:160px;
+    position:absolute;
+    right:20px;
+    top:120px;
+    z-index:20;
+    display:none;
+    background:#AAA;
+    p{
+        height:35px;
+        background:#666;
+        line-height:35px;
+        color:#fff;
+        .commodity{
+            color:darkred;
+        }
+    }
+    dd{
+        float:left;
+        height:65px;
+        
+    } 
+    dt{
+        float:right;
+         height:65px;
+         margin-right:20px;
+    }  
+    .cakeName{
+        height:35px;
+        display:block;               
+    } 
+    .cakeNumb{
+        height:30px;
+         display:block;
+        i{
+            display:inline-block;
+            width:55px;
+            text-align:center;
+        }
+        em{
+            color:#A52A2A;
+        }
+    }
+    .addcom{
+        display:block;
+        font-size: 14px;
+        height:40px;
+        line-height:40px;
+        .oNumble{
+            color:darkred;
+        }
+    }
+    .goCar{
+        width:100px;
+        height:30px;
+        line-height:30px;
+        background:orangered;
+        color:#fff;
+        display:block;
+        cursor: pointer;
+        margin-top:56px;
+        margin-left:122px;
+    }
+}
+

@@ -197,6 +197,7 @@ function AutoPlayerImgs(boxId,width,height,imgs,urls,speed,btn){
 		
 	}	
 function username(data){	
+	console.log(data);
 			let txt=$(".userName").val();	
 			var  flag=1;
 			$(".userPwd").val("");

@@ -134,3 +134,69 @@ img{
          
     }
 }
+#box{
+    width:500px;
+    height:165px;
+   border:2px solid orangered;
+   position:absolute;
+   top:200px;
+   left:260px;
+  
+   .car{
+        width:91.9%;
+        height:35px;
+        display:inline-block;      
+        float:left;
+        background:orangered;
+        line-height: 35px;
+        color:#fff;
+   }
+   .close{
+        width:8%;
+        height:35px;
+        display:inline-block;
+        color:#fff;
+        float:right;
+        line-height: 35px;
+        text-align:center;
+        background:orangered;
+        cursor: pointer;
+   }
+   dd{
+       float:left;
+   }
+   dt{
+       float:left;
+       #minus,#plus{
+                display:inline-block;
+                width:20px;
+                height: 20px;
+                font-size: 12px;
+            }
+            #text{
+                width:40px;
+                height:20px;
+                font-size: 14px;
+                text-align:center;
+                line-height:20px;
+            }
+            .goOn{
+                width:70px;
+                height:40px;
+                background:#FF4500;
+                display:inline-block;
+                color:#fff;
+                text-align:center;
+                line-height:40px;
+                margin-top:20px;
+                 margin-left:50px;
+                 cursor: pointer;
+            }
+            .account{
+                @extend .goOn;
+                margin-left:50px;
+                cursor: pointer;
+            }
+   }
+   
+}

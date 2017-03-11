@@ -109,4 +109,59 @@ img {
   #addCompany a:hover p {
     color: brown; }
 
+#box {
+  width: 500px;
+  height: 165px;
+  border: 2px solid orangered;
+  position: absolute;
+  top: 200px;
+  left: 260px; }
+  #box .car {
+    width: 91.9%;
+    height: 35px;
+    display: inline-block;
+    float: left;
+    background: orangered;
+    line-height: 35px;
+    color: #fff; }
+  #box .close {
+    width: 8%;
+    height: 35px;
+    display: inline-block;
+    color: #fff;
+    float: right;
+    line-height: 35px;
+    text-align: center;
+    background: orangered;
+    cursor: pointer; }
+  #box dd {
+    float: left; }
+  #box dt {
+    float: left; }
+    #box dt #minus, #box dt #plus {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      font-size: 12px; }
+    #box dt #text {
+      width: 40px;
+      height: 20px;
+      font-size: 14px;
+      text-align: center;
+      line-height: 20px; }
+    #box dt .goOn, #box dt .account {
+      width: 70px;
+      height: 40px;
+      background: #FF4500;
+      display: inline-block;
+      color: #fff;
+      text-align: center;
+      line-height: 40px;
+      margin-top: 20px;
+      margin-left: 50px;
+      cursor: pointer; }
+    #box dt .account {
+      margin-left: 50px;
+      cursor: pointer; }
+
 /*# sourceMappingURL=sweetNotice.css.map */

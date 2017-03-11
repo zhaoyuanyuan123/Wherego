@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/sweetNotice.css"/>
+
+	</head>
+	<body>
+		<div id="box">
+			<p class="car">1件商品加入购物车</p><p class="close">关闭</p>
+			<dl>
+				<dd><img src="../img/10937.jpg" width="150" height="128"</dd>
+				<dt>雪域牛乳芝士蛋糕<br>
+				    加入数量：<input type="button" value="-" id="minus"  />
+							<input type="text" id="text" value="1" />
+							<input type="button" value="+" id="plus"  /><br>
+					总计金额：￥198:00<br>
+					<p class="goOn">继续购买</p><p class="account">去结算</p>
+				</dt>
+			</dl>
+		</div>
+	</body>
+</html>
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js" ></script>
+<script>
+	$(function(){
+		$(".close").click(function(){
+			//$("#box").css("display","none");
+		})
+	})
+</script>
+<script>
+	var minus=document.getElementById("minus");
+	var oText=document.getElementById("text");
+	var plus=document.getElementById("plus");	
+	plus.onclick=function(){
+				var n=parseInt(text.value);
+				if(n<199&&n>0){
+					oText.value= n+1;	
+					minus.disabled=false;
+					minus.style.cursor="pointer"				
+					if(oText.value==199){
+						plus.disabled=true;
+						plus.style.cursor="no-drop";
+					}
+				}else{
+					plus.disabled=true;
+					plus.style.cursor="no-drop";
+				}
+			}
+			minus.onclick=function(){
+				var n=parseInt(text.value);	
+				if(n>1&&n<200){
+					oText.value=n-1;
+					plus.disabled=false;
+					plus.style.cursor="pointer"	;			
+					if(oText.value==1){
+						minus.disabled=true;
+						minus.style.cursor="no-drop"
+					}
+				}else{
+					minus.disabled=true;
+					minus.style.cursor="no-drop"
+				}
+			}
+			oText.onkeyup=function(){
+				setTimeout(function(){
+					var txt=oText.value
+					var n1=txt.replace(/\D/g,"")?txt.replace(/\D/g,""):1;//\D非数字
+					oText.value=n1<199?n1:1;
+					if(txt==1){
+						minus.disabled =true;
+						minus.style.cursor="no-drop";
+					}else{
+						minus.disabled =false;
+						minus.style.cursor="pointer";
+					}
+					if(txt==199){
+						plus.disabled=true;
+						plus.style.cursor="no-drop"
+					}else{
+						plus.disabled=false;
+						plus.style.cursor="pointer";
+					}
+				},500)				
+			}
+</script>

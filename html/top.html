@@ -4,31 +4,7 @@
 		<meta charset="UTF-8">
 		<title></title>
 		<link rel="stylesheet" href="../css/style.css" />
-		<script type="text/javascript" src="../js/jquery-1.8.3.min.js" ></script>
-		<script type="text/javascript" src="../js/promisecake.js" ></script>
-		<script>
 		
-		$(function(){	
-			project();
-			$(".levelone").click(function(){
-	         $(this).next().toggle(500);
-			})
-			$(".leveltwo").click(function(){
-	         $(this).next().toggle(500);
-			})
-			$(".levelthree").click(function(){
-	         $(this).next().toggle(500);
-			})
-			$(".levelfour").click(function(){
-	         $(this).next().toggle(500);
-			})
-			$(".city").click(function(){
-				$("#seleteCity").toggle(500);
-			})
-		})	
-		
-			
-		</script>
 	</head>
 	<body>
 		<!---------------------------------导航---------------------------------->
@@ -101,7 +77,7 @@
 		<!---------------------------公告------------------------------------->
 		<div id="enter">
 			<div class="dashed"><a href="###"><p class="city">西安市|V</p></a><p class="seaver">全国客服热线  187-9252-2353 服务时间：10:30-17:30</p>
-			<p class="shoppingcay"> <a href="landing.html">登录</a> |<a href="register(注册).html"> 注册</a> |<a href="###"> 购物车2件 </a>|<a href="###"> 帮助</a></p></div>
+			<p class="shoppingcay"> <a href="landing.html">登录</a> |<a href="register(注册).html"> 注册</a> |<a href="###" class="showCar"> 购物车2件 </a>|<a href="###"> 帮助</a></p></div>
 			<p class="useradvice"><marquee >重要公告：为方便广大用户选购蛋糕，根据用户反馈意见3月16日起甜心蛋糕将全面升级！"1磅" 改为：1-4人份，"2磅" 改为：4-8人份，"3磅" 改为：8-12人份！！！欢迎大家前来订购</marquee></p>			
 		</div>
 		
@@ -111,5 +87,52 @@
 			<p class="oLserver"><img src="../img/service_help.png"  class="help" width="150" height="80" /><img src="../img/ico_service.png" width="50" height="50" /> </p><br />
 			<p class="letter"><img src="../img/wechat_qr_code.png" class="wechat" width="150" height="150" /><img src="../img/ico_wechat.png"  width="50" height="50" /> </p>
 		</div>
+		
+		
+		<div id="carInfor">
+			<p>您购物车内的商品(<i class="commodity">2</i>)</p>
+			<dl>
+				<dd><img src="../img/12120.jpg" width="65" height="65" /></dd>
+				<dt>
+					<span class="cakeName">哈密瓜拿破仑蛋糕</span>
+					<span class="cakeNumb"><i>1磅</i><em>￥198.00</em></span>
+				</dt>
+				<span class="addcom">共计<em class="oNumble">2</em>件商品，金额小计 <em>￥398.00</em></span>
+				<a href="flow.html"><span class="goCar">去购物结算</span></a>
+			</dl>
+		</div>
 	</body>
 </html>
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js" ></script>
+		<script type="text/javascript" src="../js/promisecake.js" ></script>
+		<script>
+		
+		$(function(){	
+			project();
+			$(".levelone").click(function(){
+	         $(this).next().toggle(500);
+			})
+			$(".leveltwo").click(function(){
+	         $(this).next().toggle(500);
+			})
+			$(".levelthree").click(function(){
+	         $(this).next().toggle(500);
+			})
+			$(".levelfour").click(function(){
+	         $(this).next().toggle(500);
+			})
+			$(".city").click(function(){
+				$("#seleteCity").toggle(500);
+			})
+			$(".showCar").mouseenter(function(){
+				$("#carInfor").css("display","block");
+			})
+			$("#carInfor").mouseleave(function(){
+				$("#carInfor").css("display","none");
+			})
+			
+			
+		})	
+		
+			
+		</script>

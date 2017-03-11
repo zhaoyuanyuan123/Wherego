@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/flow.css"/>
+	</head>
+	<body>
+		<div id="top"></div>
+		<img src="../img/21.jpg"  height="195" width="102%"/>
+		<div id="Information">
+			<p>
+				<label><input type="checkbox" class="allSelect"> &nbsp;全选 &nbsp;&nbsp;&nbsp;商品信息</label>				
+			</p>
+			<img src="../img/listImg.jpg"  />
+			<div id="inforList">
+				<label class="labelImg"><input type="checkbox" />&nbsp;&nbsp;&nbsp;<img src="../img/b_12775.jpg" width="85" height="65"/> </label>
+			    <span class="Pinfor">雪域蓝莓芝士蛋糕<br>
+			    	<span>规格：1磅 免费配送5套餐具</span>			    	
+			    </span>
+			    <em class="price">￥198.00</em> <em class="integal">0</em>
+			    <input type="button" value="-" id="minus"  />
+				<input type="text" id="text" value="1" />
+				<input type="button" value="+" id="plus"  />
+				<input type="text" class="txt" placeholder="输入文字制作DIY生日卡" />
+				 <em class="price">￥198.00</em> 
+				<input type="checkbox" class="select" />
+				<i class="delete">删除</i>				
+			</div>
+		</div>
+		<p class="count">商品件数 <em>0</em>件 代付商品金额(不包含运费)<i>￥0.00元</i></p>
+		<input type="button" value="结算" class="oaccount" />
+		
+	</body>
+</html>
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js" ></script>
+<script>
+	$("#top").load("top.html");
+	$("#footer").load("footer.html");
+	
+	var minus=document.getElementById("minus");
+	var oText=document.getElementById("text");
+	var plus=document.getElementById("plus");	
+	plus.onclick=function(){
+				var n=parseInt(text.value);
+				if(n<199&&n>0){
+					oText.value= n+1;	
+					minus.disabled=false;
+					minus.style.cursor="pointer"				
+					if(oText.value==199){
+						plus.disabled=true;
+						plus.style.cursor="no-drop";
+					}
+				}else{
+					plus.disabled=true;
+					plus.style.cursor="no-drop";
+				}
+			}
+			minus.onclick=function(){
+				var n=parseInt(text.value);	
+				if(n>1&&n<200){
+					oText.value=n-1;
+					plus.disabled=false;
+					plus.style.cursor="pointer"	;			
+					if(oText.value==1){
+						minus.disabled=true;
+						minus.style.cursor="no-drop"
+					}
+				}else{
+					minus.disabled=true;
+					minus.style.cursor="no-drop"
+				}
+			}
+			oText.onkeyup=function(){
+				setTimeout(function(){
+					var txt=oText.value
+					var n1=txt.replace(/\D/g,"")?txt.replace(/\D/g,""):1;//\D非数字
+					oText.value=n1<199?n1:1;
+					if(txt==1){
+						minus.disabled =true;
+						minus.style.cursor="no-drop";
+					}else{
+						minus.disabled =false;
+						minus.style.cursor="pointer";
+					}
+					if(txt==199){
+						plus.disabled=true;
+						plus.style.cursor="no-drop"
+					}else{
+						plus.disabled=false;
+						plus.style.cursor="pointer";
+					}
+				},500)				
+			}
+
+
+</script>
