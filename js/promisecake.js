@@ -1,42 +1,36 @@
 
 function project(){
-			$(".time1>img:eq(0)").mouseenter(function(){
-				$("#leftImg").animate({
+			$(".time1>img:eq(0)").mouseenter(function(event){
+				$("#leftImg").stop(false).animate({
 					"left":"-5px"
-				},1500);				
-			})			
+				},1000);
+			})
+			
 			$(".time1>img").mouseleave(function(){
-				$("#leftImg").animate({
+				$("#leftImg").stop(false).animate({
 					"left":"-1000px"
 				},1000);
 			})
 			$(".time2>img:eq(1)").mouseenter(function(){
-				$("#centerImg").animate({
+				$("#centerImg").stop(false).animate({
 					"top":"0px"
-				},1500);
+				},1000);
 			})
 			$(".time2>img").mouseleave(function(){
-				$("#centerImg").animate({
+				$("#centerImg").stop(false).animate({
 					"top":"-560px"
 				},1000);
 			})			
 			$(".time3>img:eq(0)").mouseenter(function(){
-				$("#rightImg").animate({
+				$("#rightImg").stop(false).animate({
 					"right":"10px"
-				},1500);
+				},1000);
 			})
 			$(".time3>img").mouseleave(function(){
-				$("#rightImg").animate({
+				$("#rightImg").stop(false).animate({
 					"right":"-1060px"
 				},1000);
 			})
-			
-					
-//			$("#prolist").moseover(function(){
-//				$("#odd").stop();
-//				$("#odd1").stop();
-//				$("#odd2").stop();
-//			})
 			$("#odd").mouseenter(function(){
 							
 				$(".shopping").animate({

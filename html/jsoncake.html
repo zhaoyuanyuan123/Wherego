@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/flow.css"/>
+	</head>
+	<body>
+		<div id="top"></div>
+		<div id="banner"></div>	
+		<div id="cakeList">
+			<!--<ul>
+				<li>
+					<dl id="odd">
+						<dd ><img src="img/list.jpg" width="310" height="300" /></dd>
+						<dt>
+							<p class="pleft">雪域牛乳芝士蛋糕 Le Cheesecake</p>
+							<p class="pright">1磅 价格：<i>198.00</i><br>甜度:<img src="img/26.jpg" /><img src="img/26.jpg" /></p>
+							<div class="shopping">
+								<ul>
+									<li><a href="###">1磅</a></li>
+									<li><a href="###">2磅</a></li>
+									<li><a href="###">3磅</a></li>
+									<li><a href="###">4磅</a></li>
+								</ul>
+								<em class="carsh"><a href="###">加入购物车</a></em>
+								<i><a href="###">立即购买</a></i>
+							</div>
+						</dt>
+					</dl>
+				</li>
+			</ul>
+			-->
+		</div>		
+		<div id="footer"></div>
+	</body>
+</html>
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js" ></script>
+<script>
+	$("#top").load("top.html");
+	$("#banner").load("banner.html");
+	$.getJSON("../json/cake.json",showCake);
+		function showCake(data){
+			console.log(data);			
+			let htmlStr="";
+				htmlStr="<ul>"
+				for(let i=0;i<data.length;i++){
+					let dlStr="<dl id='odd'><dd ><img src='"+data[i].url+"' width='310' height='300' /></dd><dt><p class='pleft'>"
+					+data[i].title+"</p><p class='pright'>"+data[i].size+" 价格：<i>198.00</i><br>甜度:<img src='"
+					+data[i].sweet+"' /><img src='"+data[i].sweet+"'/></p><div class='shopping'><ul><li><a href='###'>1磅</a></li><li><a href='###'>2磅</a></li><li><a href='###'>3磅</a></li><li><a href='###'>4磅</a></li></ul><em class='carsh'><a href='###'>加入购物车</a></em><i><a href='###'>立即购买</a></i></div></dt></dl>"
+					htmlStr+="<li >"+dlStr+"</li>";						
+				}
+			htmlStr+="</ul>";
+			$("#cakeList").append(htmlStr);	
+			//console.log($("#cakeList ul li").children(".shopping"));
+			$("#cakeList ul dt").mouseenter(function(){					
+				$(this).children("div").animate({
+					"bottom":"0px"
+				},1000)
+			})				
+			$("#cakeList ul dt div").mouseleave(function(){
+				$(this).animate({
+					"bottom":"-300px"
+				},1000)
+			})
+			
+		}	
+</script>

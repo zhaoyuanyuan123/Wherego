@@ -111,6 +111,15 @@
 		if(cell!=""&&cellSpan==""&&replace!=""&& reTxt==""&&virify!=""&&virifySpan==""&&Onew!=""&&newSpan==""&&check==true){
 			alert("可以注册了");
 		}
+		
+		$.post("register.php",{
+					"userName":cell,
+					"userPass":virify
+			},
+			function(data){
+				console.log(data)
+			}
+		)
 	})
 	})
 	

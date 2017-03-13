@@ -96,5 +96,92 @@ body{
     color:#fff;   
     display:inline-block;
 }
+#cakeList{
+    width:$bodyWidth;
+    min-height:400px;   
+   ul li{
+       float:left;
+       width:33%;
+       height:380px;    
+       position: relative;    
+       overflow: hidden;
+       .shopping{
+            width:312px;
+            height:100px;     
+            background:rgba(0,0,0,0.8);
+            position:absolute;  
+            margin-left:-18px;      
+            bottom:-300px;
+            ul li{
+                width:77px;
+                height:50px;
+                border-right:1px solid #fff;
+                border-bottom:1px solid #fff;
+                float:left;
+                color:#fff;
+                text-align:center;
+                line-height:50px;
+            }
+            li:hover a{
+                color:orangered;
+            }
+            em:hover a{
+                color:orangered;
+            }
+            i:hover a{
+                color:orangered;
+            }
+            em{
+                display:inline-block;
+                width:150px;
+                height:50px;           
+                text-align:center;
+                line-height:50px;
+                font-size: 14px;
+                color:#fff;
+            }
+            i{
+               @extend em;
+            }
+        }
+}
+    dl{
+        width:29%;
+        height:480px;
+        float:left;    
+        padding:10px; 
+    }
+    dd{
+        width:20%;
+        height:300px;       
+        margin-left:2px;
+    }
+    dt{
+        width:300px;
+        height:70px;           
+        margin-left:18px;
+        color:#B2ACA3;
+        position:relative;
+        border-bottom:1px dashed #B2ACA3;
+        .pleft{
+            display:inline-block;
+            width:130px;
+            height:48px;
+            text-align:center;                 
+            float:left;
+            font-size:14px;
+            margin-top:20px;
+        }
+        .pright{
+            @extend .pleft;
+            i{
+                color:red;
+            }
+            margin-left:40px;
+            
+        }
+    }
+    
+}
 
 
