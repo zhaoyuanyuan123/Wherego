@@ -1,7 +1,7 @@
 [{
 	"id":"000000",
 	"title":"雪域蓝莓蛋糕 Le Cheesecake",
-	"price":"￥198.00/1份",
+	"price":"￥198.00",
 	"beizhu":"礼物礼物",
 	"size":"4磅",
 	"sweet":"../img/26.jpg",	
@@ -10,7 +10,7 @@
 {
 	"id":"000001",
 	"title":"拿铁蛋糕 Le Cheesecake",
-	"price":"￥188.00/1张",
+	"price":"￥188.00",
 	"beizhu":"仙仙",
 	"sweet":"../img/26.jpg",
 	"size":"3磅",
@@ -19,7 +19,7 @@
 {
 	"id":"000002",
 	"title":"草莓蛋糕 Le Cheesecake",
-	"price":"￥580.00/1张",
+	"price":"￥580.00",
 	"beizhu":"礼物礼物",
 	"size":"1磅",	
 	"sweet":"../img/26.jpg",
@@ -28,7 +28,7 @@
 {
 	"id":"000003",
 	"title":"云南树莓蛋糕 Le Cheesecake",
-	"price":"￥198.00/1张",
+	"price":"￥198.00",
 	"beizhu":"礼物礼物",
 	"size":"2磅",
 	"sweet":"../img/26.jpg",
@@ -37,7 +37,7 @@
 {
 	"id":"000004",
 	"title":"红心脐橙蛋糕 Le Cheesecake",
-	"price":"￥58.00/6个",
+	"price":"￥58.00",
 	"beizhu":"富含番茄红素的红肉橙",
 	"size":"1磅",
 	"sweet":"../img/26.jpg",
@@ -46,7 +46,7 @@
 {
 	"id":"000005",
 	"title":"台湾红凤梨蛋糕",
-	"price":"￥49.00/1个",
+	"price":"￥290.00",
 	"beizhu":"一汪蜜汁，满口细嫩",
 	"sweet":"../img/26.jpg",
 	"size":"2磅",
@@ -55,7 +55,7 @@
 {
 	"id":"000006",
 	"title":"泰国山竹蛋糕",
-	"price":"￥88.00/2斤",
+	"price":"￥88.00",
 	"beizhu":"亲信淡雅，爽口清甜",
 	"size":"4磅",
 	"sweet":"../img/26.jpg",
@@ -64,7 +64,7 @@
 {
 	"id":"000007",
 	"title":"智力西梅蛋糕",
-	"price":"￥49.00/1斤",
+	"price":"￥49.00",
 	"beizhu":"通透水润，汁多味甘",
 	"size":"3磅",
 	"sweet":"../img/26.jpg",
@@ -73,7 +73,7 @@
 {
 	"id":"000008",
 	"title":"雪玫瑰草莓蛋糕",
-	"price":"￥49.00/240g",
+	"price":"￥149.00",
 	"beizhu":"你是我心中的snow white",
 	"size":"1磅",
 	"sweet":"../img/26.jpg",
@@ -82,7 +82,7 @@
 {
 	"id":"000008",
 	"title":"木瓜牛奶蛋糕",
-	"price":"￥49.00/240g",
+	"price":"￥249.00",
 	"beizhu":"你是我心中的snow white",
 	"size":"1磅",
 	"sweet":"../img/26.jpg",
@@ -91,7 +91,7 @@
 {
 	"id":"000009",
 	"title":"海南芒果蛋糕",
-	"price":"￥29.90/1斤",
+	"price":"￥129.90",
 	"beizhu":"滑溜香芒肉，萌翻掌心甜",
 	"size":"2磅",
 	"sweet":"../img/26.jpg",

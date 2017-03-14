@@ -13,15 +13,17 @@ body{
     p{
         border:1px solid #ccc;
         border-right:none;
-        margin-left:30px;
-        width:187px;
+        padding-left:3%;
+        width:97%;
         height:40px;
         line-height:42px;
         display:inline-block;
         background:#f2f2f2;
         float:left;
         color:#515151;
-        
+        span{
+            display:inline-block;
+        }
         font-size:14px;
         input{
             width:15px;
@@ -104,14 +106,14 @@ body{
        width:33%;
        height:380px;    
        position: relative;    
-       overflow: hidden;
+       overflow: hidden;       
        .shopping{
             width:312px;
             height:100px;     
             background:rgba(0,0,0,0.8);
             position:absolute;  
             margin-left:-18px;      
-            bottom:-300px;
+            bottom:-300px;            
             ul li{
                 width:77px;
                 height:50px;
@@ -183,5 +185,7 @@ body{
     }
     
 }
+
+ 
 
 

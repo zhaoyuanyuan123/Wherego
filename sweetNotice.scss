@@ -137,10 +137,11 @@ img{
 #box{
     width:500px;
     height:165px;
-   border:2px solid orangered;
-   position:absolute;
-   top:200px;
-   left:260px;
+    border:2px solid orangered;
+    position:absolute;
+    top:200px;
+    left:260px;
+    z-index:101;
   
    .car{
         width:91.9%;
@@ -189,8 +190,8 @@ img{
                 text-align:center;
                 line-height:40px;
                 margin-top:20px;
-                 margin-left:50px;
-                 cursor: pointer;
+                margin-left:50px;
+                cursor: pointer;
             }
             .account{
                 @extend .goOn;

@@ -115,7 +115,8 @@ img {
   border: 2px solid orangered;
   position: absolute;
   top: 200px;
-  left: 260px; }
+  left: 260px;
+  z-index: 101; }
   #box .car {
     width: 91.9%;
     height: 35px;

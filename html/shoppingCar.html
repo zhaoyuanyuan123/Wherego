@@ -31,10 +31,14 @@
 	})
 </script>
 <script>
-	var minus=document.getElementById("minus");
-	var oText=document.getElementById("text");
-	var plus=document.getElementById("plus");	
-	plus.onclick=function(){
+	
+	
+	
+	function click(){
+		var minus=document.getElementById("minus");
+		var oText=document.getElementById("text");
+		var plus=document.getElementById("plus");
+		plus.onclick=function(){
 				var n=parseInt(text.value);
 				if(n<199&&n>0){
 					oText.value= n+1;	
@@ -85,4 +89,6 @@
 					}
 				},500)				
 			}
+	}
+	click();
 </script>

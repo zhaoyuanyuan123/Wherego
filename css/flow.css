@@ -10,8 +10,8 @@ body {
   #Information p {
     border: 1px solid #ccc;
     border-right: none;
-    margin-left: 30px;
-    width: 187px;
+    padding-left: 3%;
+    width: 97%;
     height: 40px;
     line-height: 42px;
     display: inline-block;
@@ -19,6 +19,8 @@ body {
     float: left;
     color: #515151;
     font-size: 14px; }
+    #Information p span {
+      display: inline-block; }
     #Information p input {
       width: 15px;
       height: 15px; }

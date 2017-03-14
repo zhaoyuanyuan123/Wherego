@@ -15,7 +15,7 @@
 			<div class="registerLeft">
 				
 					<p>Email/手机号码:</p><input type="text" placeholder="请输入邮箱或者手机号" class="userName"  /><span class="nameSpan"></span>
-					<p>密码:</p><input type="text" placeholder="请输入6-18位数字字母下划线" class="userPwd" /> <span class="pwdSpan"></span>
+					<p>密码:</p><input type="password" placeholder="请输入6-18位数字字母下划线" class="userPwd" /> <span class="pwdSpan"></span>
 					<p>验证码:</p><input type="text" class="replace" /> <span class="reptxt">2a5d</span>
 					            <input type="button" class="repbtn" value="换一个" /><span class="repSpan"></span><br>
 					<label><input type="checkbox" id="check" />记住账户名</label><br><br>
@@ -53,18 +53,17 @@
 			}
 			$(".reptxt").html(res);
 		})
-		
-		if($(".userPwd").val()==""&&$(".userName").val()==""){
-			$(".pwdSpan").html("");
-			$(".nameSpan").html("");
-		}
-		$(".userName").blur(function(){
-			$.getJSON("../json/userInformation.json",username);	
-			//console.log("username"+username);
-		})
-		$(".userPwd").blur(function(){
-			$.getJSON("../json/userInformation.json",userPwd);
-		})
+//		
+//		if($(".userPwd").val()==""&&$(".userName").val()==""){
+//			$(".pwdSpan").html("");
+//			$(".nameSpan").html("");
+//		}
+		//$(".userName").blur(function(){
+			//$.getJSON("../json/userInformation.json",username);			
+		//})
+		//$(".userPwd").blur(function(){
+			//$.getJSON("../json/userInformation.json",userPwd);			
+		//})
 		$(".replace").blur(function(){
 			console.log($(".replace").val());
 			if($(".replace").val()==$(".reptxt").html()){
@@ -80,9 +79,20 @@
 			let nameSpan=$(".nameSpan").html();
 			let pwdSpan=$(".pwdSpan").html();
 			let repSpan=$(".repSpan").html();
-			if(username!=""&&userpwd!=""&&replace!=""&&nameSpan==""&&pwdSpan==""&&repSpan==""){
-				alert("亲！可以登录了");
-			}
+//			if(username!=""&&userpwd!=""&&replace!=""&&nameSpan==""&&pwdSpan==""&&repSpan==""){
+//				alert("亲！可以登录了");
+//			}
+
+            $.post("landing.php",{
+            	"userName":$(".userName").val(),
+            	"userPass":$(".userPwd").val()
+            },function(data){console.log(data);
+            	if(data.indexOf("1")>-1){
+								alert("亲！可以登录了");						
+						}else{
+							$(".nameSpan").html("亲❤用户名或密码不正确");	
+						}
+            })
 			//保存用户cookie；
 			let checked=$("#check")[0].checked;
 			if(nameSpan==""&&pwdSpan==""){

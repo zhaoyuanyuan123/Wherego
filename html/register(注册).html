@@ -62,13 +62,14 @@
 		})
 	$(".cell").blur(function(){
 		let num=$(".cell").val();
-		let reg=/^(187|138|155|177|132|152)[0-9]{8}/;
-		
-		if(reg.test(num)&&num.length==11){	
-			$(".cellSpan").html("");
-		}else{
-			$(".cellSpan").html("*亲❤请输入正确的手机号或邮箱");
-		}
+		$.get("register.php",{"userName":$(".cell").val()},function(data){
+						console.log(data);
+						if(data.indexOf("1")>-1){
+							$(".cellSpan").html("亲，该用户名已经存在");							
+						}else{
+							$(".cellSpan").html("");	
+						}
+					});
 	})	
 	$(".new").blur(function(){
 		if($(".cell").val()==""){
@@ -112,14 +113,16 @@
 			alert("可以注册了");
 		}
 		
-		$.post("register.php",{
-					"userName":cell,
-					"userPass":virify
-			},
-			function(data){
-				console.log(data)
-			}
-		)
+		$.post("demo03.php",
+						{
+							"userName":$(".cell").val(),
+							"userPass":$(".virify").val()
+						},
+						function(data){
+							alert(data);
+							//alert("注册成功！");			
+						}
+				)
 	})
 	})
 	
