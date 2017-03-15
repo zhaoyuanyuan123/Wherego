@@ -24,9 +24,15 @@
 		<div id="footer"></div>
 	</body>
 </html>
+<script type="text/javascript" src="../js/cookie.js" ></script>
 <script>
 	$(function(){
 		$("#top").load("top.html");
-		$("#footer").load("footer.html");
+		$("#footer").load("footer.html"); 								
+			setTimeout(function(){
+				let username=getCookie("UserName");
+				$("#top div:eq(2) div p:eq(2) a:eq(0)").html(username);				
+			})		
 	})
+	
 </script>

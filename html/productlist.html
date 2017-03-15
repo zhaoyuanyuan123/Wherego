@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../css/flow.css"/>
+	</head>
+	<body>
+		<div id="top"></div>
+		<div id="banner"></div>	
+		<div id="cakeList">			
+		</div>		
+		<div id="footer"></div>
+	
+	</body>
+	
+</html>
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js" ></script>
+<script type="text/javascript" src="../js/cookie.js" ></script>
+<script>
+	
+	$.get("getGoodsList.php",product);
+	function product(data){		
+		var oData=eval(data);
+		let htmlStr="";
+				htmlStr="<ul>"
+				for(let i=0;i<oData.length;i++){
+					let dlStr="<dl id='odd'><dd ><img src='../img/"+oData[i].goodsImg+"' width='310' height='300' /></dd><dt><p class='pleft'>"
+					+oData[i].goodsName+"</p><p class='pright'><i class='goodsid'>"+oData[i].goodsId+"</i>价格：<i>￥"+oData[i].goodsPrice+"</i><br>甜度:<img src='../img/"
+					+oData[i].goodsDesc+"' /><img src='../img/"+oData[i].goodsDesc+"'/></p><div class='shopping'><ul><li><a href='###'>1磅</a></li><li><a href='###'>2磅</a></li><li><a href='###'>3磅</a></li><li><a href='###'>4磅</a></li></ul><em class='carsh'><a href='###'>加入购物车</a></em><i><a href='###'>立即购买</a></i></div></dt></dl>"
+					htmlStr+="<li >"+dlStr+"</li>";						
+				}
+			htmlStr+="</ul>";
+			$("#cakeList").append(htmlStr);	
+			//console.log($("#cakeList ul li").children(".shopping"));
+			$("#cakeList ul dt").mouseenter(function(){					
+				$(this).children("div").animate({
+					"bottom":"0px"
+				},1000)
+			})				
+			$("#cakeList ul dt div").mouseleave(function(){
+				$(this).animate({
+					"bottom":"-300px"
+				},1000)
+			})
+			$("#cakeList ul li").find("em").click(function(){
+				let userName=getCookie("UserName");				
+				let goodsId=$(this).parents("li dl dt").find(".goodsid").html();
+				$.get("addShoppingCart.php",{
+					"vipName":userName,
+					"goodsId":goodsId
+				},function(){
+					if(data.indexOf("1")>-1){
+							$(".cellSpan").html("亲，该用户名已经存在");							
+						}else{
+							$(".cellSpan").html("");	
+						}
+				})
+			})
+	}	
+	    $("#top").load("top.html",function(){
+	    	setTimeout(function(){
+				let username=getCookie("UserName");				
+				$("#top div:eq(2) div p:eq(2) a:eq(0)").html(username);
+			},1000);
+	    });
+	     
+		$("#banner").load("banner.html");
+		$(".levelone").click(function(){
+	        $(this).next().toggle(500);
+		})
+		$(".leveltwo").click(function(){
+	     	$(this).next().toggle(500);
+		})
+		$(".levelthree").click(function(){
+	     	$(this).next().toggle(500);
+		})
+		$(".levelfour").click(function(){
+	     	$(this).next().toggle(500);
+		})
+		$(".city").click(function(){
+			$("#seleteCity").toggle(500);
+		})
+		$("#footer").load("footer.html");
+       
+	
+</script>

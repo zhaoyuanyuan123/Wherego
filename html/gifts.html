@@ -160,7 +160,12 @@
 <script>
 	$(function(){
 		project();
-		$("#top").load("../html/top.html");
+		 $("#top").load("top.html",function(){
+	    	setTimeout(function(){
+				let username=getCookie("UserName");				
+				$("#top div:eq(2) div p:eq(2) a:eq(0)").html(username);
+			},1000);
+	    });
 		$(".list1").click(function(){
 			$(".eatcake").toggle(500);
 		})

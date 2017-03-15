@@ -39,7 +39,13 @@
 <script type="text/javascript" src="../js/promisecake.js" ></script>
 <script type="text/javascript" src="../js/cookie.js" ></script>
 <script>
-	$("#top").load("top.html");
+	 $("#top").load("top.html",function(){
+	    	setTimeout(function(){
+				let username=getCookie("UserName");
+				//console.log($("#top div:eq(2) div p:eq(2) a:eq(0)")[0]);
+				$("#top div:eq(2) div p:eq(2) a:eq(0)").html(username);
+			},1000);
+	    });		    
 	$("#footer").load("footer.html");
 	$(function(){			
 		$(".repbtn").click(function(){	   
@@ -88,7 +94,7 @@
             	"userPass":$(".userPwd").val()
             },function(data){console.log(data);
             	if(data.indexOf("1")>-1){
-								alert("亲！可以登录了");						
+								location="productlist.html";						
 						}else{
 							$(".nameSpan").html("亲❤用户名或密码不正确");	
 						}
@@ -103,8 +109,7 @@
 					deleteCookie("UserName");
 					deleteCookie("UserPassword");
 				}	
-			}
-												
+			}												
 		})
 		if(getCookie("UserName")){		
 			let UserName=getCookie("UserName");

@@ -148,4 +148,13 @@ body {
       #cakeList dt .pright i {
         color: red; }
 
+#banner {
+  width: 100%; }
+  #banner img {
+    width: 103%; }
+
+#founder {
+  margin-left: 10px;
+  width: 100%; }
+
 /*# sourceMappingURL=flow.css.map */
